@@ -86,7 +86,7 @@ main .images img{
 
 .main-heading h1>span{
   color: darkorange;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .description{
@@ -124,7 +124,7 @@ main .images img{
   grid-row: 4 / 5;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .image{
