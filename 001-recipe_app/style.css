@@ -34,7 +34,7 @@ nav{
 nav a{
   text-decoration: none;
   font-size: 1rem;
-  color: #535353;
+  color: #000;
 }
 
 nav a:hover{
@@ -42,9 +42,95 @@ nav a:hover{
 }
 
 .home-container img{
-  width: 300px;
+  width: 500px;
 }
 
+main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 100vh;
+}
+
+main .images{
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+  padding: 3rem 0 0 0;
+  
+}
+
+main .images img{
+  width: 90%;
+}
+
+.site-details{
+  grid-column:2 / -1;
+  grid-row: 2 / -1 ;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  padding: 1rem;
+}
+
+.main-heading{
+  grid-column: 1 / -1;
+}
+
+.main-heading h1{
+  font-size: 3rem;
+  color: #000;
+}
+
+.main-heading h1>span{
+  color: darkorange;
+  font-weight: 300;
+}
+
+.description{
+  grid-column: 1 / -1;
+  margin: 1rem 0 0 0;
+  font-weight: 300;
+}
+
+.stats{
+  margin: 3rem 0 0 0;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.numbers{
+  font-weight: 700;
+  color: #000;
+  font-size: 1.3rem;
+}
+.stats-sep{
+  color: #535353;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.stats-dsc{
+  font-weight: 300;
+  color: darkorange;
+}
+.homepage-images{
+  margin: 3rem 0 0 0;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image{
+  background: #535353;
+  padding: 0 1rem;
+  margin: 0 1rem 0 0;
+}
+
+.image img{
+  width: 130px;
+}
 .card-container{
   padding: 0.5rem;
   box-shadow: 0 0 10px #F0ECEC ;
@@ -99,7 +185,7 @@ button{
 
 h1{
   font-size: 1.4rem;
-  color: #6B6A6A;
+  color: #000;
   font-family: Arial, Helvetica, sans-serif;
 }
 
