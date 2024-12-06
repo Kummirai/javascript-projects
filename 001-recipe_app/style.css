@@ -17,6 +17,34 @@
   padding: 0.7rem;
 }
 
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 1rem;
+  color: #535353;
+}
+
+nav a:hover{
+  color: darkorange;
+}
+
+.home-container img{
+  width: 300px;
+}
+
 .card-container{
   padding: 0.5rem;
   box-shadow: 0 0 10px #F0ECEC ;
@@ -67,10 +95,6 @@ button{
   font-size: 0.8rem;
   margin: 0.3rem 0 0.1rem 0;
   box-shadow: 0 0 10px #F0ECEC;
-}
-
-.heading{
-  padding: 1rem ;
 }
 
 h1{
