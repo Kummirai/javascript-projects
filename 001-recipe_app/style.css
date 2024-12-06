@@ -21,7 +21,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 0 0 1rem;
 }
 
 nav{
@@ -121,20 +121,20 @@ main .images img{
 .homepage-images{
   margin: 3rem 0 0 0;
   grid-column: 1 / -1;
+  grid-row: 4 / 5;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .image{
-  box-shadow: 5px 5px 5px rgba(228, 228, 228, 1);
-  padding: 0 1rem;
-  margin: 0 1rem 0 0;
-  border: 1px solid rgba(217, 217, 217, 0.18);
+  box-shadow: 0px 0px 10px rgba(45, 45, 45, 1);
 }
 
 .image img{
-  width: 130px;
+  height: 130px;
+  width:130px;
+  object-fit: cover;
 }
 .card-container{
   padding: 0.5rem;
@@ -205,7 +205,7 @@ h1 span{
 }
 
 .choose{
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
 /*Modal styles*/
