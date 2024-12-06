@@ -24,12 +24,9 @@ const getRecipe = (letter) => {
           <button data-info="${recipe.idMeal}" class="recipe">Get Recipe</button>
         </div>`;
 
-
-
         recipeButtons.forEach((button) => {
           button.addEventListener('click', () => {
             const mealId = button.getAttribute('data-info');
-            console.log(mealId)
             const myMenu = data.meals.filter((menu) => menu
               .idMeal === mealId);
             myMenu.map((item) => {
@@ -75,12 +72,11 @@ const getRecipe = (letter) => {
             <p>${item.strInstructions}</p>
           </div>
         </div>
-        `
+        `;
               modal.innerHTML = modalCard;
               modal.style.display = "block";
               const closeModal = document.querySelector(
                 '.close-modal');
-                
               closeModal.addEventListener('click', () => {
                 modal.style.display = "none";
               })
