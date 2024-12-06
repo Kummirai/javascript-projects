@@ -134,7 +134,7 @@ main .images img{
 .get-started{
   grid-row-start: 7;
   grid-column-start: 2;
-  padding: 6rem 0 0 1.5rem;
+  padding: 6rem 0 0 1.4rem;
 }
 
 .get-started button{
