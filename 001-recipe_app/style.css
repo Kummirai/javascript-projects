@@ -170,6 +170,8 @@ main .images img{
 body {
     font-size: 15pt;
     /*background-color: rgba(255, 247, 225, 0.3);*/
+    height: 100vh;
+    width: 100vw;
 }
 
 .details{
@@ -314,3 +316,30 @@ li{
 }
 
 /*form page styles*/
+.favorite-container{
+  display: flex;
+  height: 100%;
+}
+
+.image-section{
+  background: url('/001-recipe_app/images/cook.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.image-section img{
+  width: 500px;
+}
+
+.form-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  width: 100%;
+}
+
+.my-form{
+  display: flex;
+  flex-direction: column;
+}
