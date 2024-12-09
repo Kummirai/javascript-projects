@@ -110,3 +110,27 @@ selectButtons.forEach(button => {
     }
   })
 })
+const myForm = document.querySelector('.my-form');
+myForm.addEventListener('submit', (event)=>{
+  event.preventDefault();
+  const email = document.querySelector('#email').value;
+const password = document.querySelector('#password').value;
+  
+  class User {
+    constructor(email, password) {
+      this.email = email,
+      this.password = password
+    }
+  }
+  
+  let users = localStorage.getItem('users');
+  users = users? JSON.parse(users) : [];
+  
+  const user = new User(email, password);
+  users = [...users, user];
+  
+  localStorage.setItem('users', JSON.stringify(users));
+  localStorage.getItem('users');
+  //window.location.href = "recipes.html";
+  console.log(users);
+})
