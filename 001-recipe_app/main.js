@@ -143,6 +143,11 @@ getRecipe("e")
 selectButtons.forEach(button => {
   button.addEventListener('click', () => {
     mealCard = "";
+    recipeByCountry.forEach((selectedButton) => {
+      if (selectedButton.classList.contains('listStyle')) {
+        selectedButton.classList.remove('listStyle')
+      }
+    })
     getRecipe(button.textContent);
     isSelected = true;
     if (isSelected) {
