@@ -12,7 +12,7 @@
 
 .root {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   grid-gap: 1.2rem;
@@ -24,6 +24,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 2rem 1rem 2rem;
+  position: sticky;
 }
 
 nav {
@@ -31,6 +32,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: sticky;
 }
 
 nav a {
@@ -419,4 +421,41 @@ li {
   background: transparent;
   border: 1px solid rgba(187, 187, 187, 0.5);
   color: #535353;
+}
+
+.recipes{
+  width: 100vw;
+  display: flex;
+}
+
+aside{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0 1rem;
+}
+
+aside h2{
+  padding: 0.5rem 0;
+}
+
+aside ul{
+  width: 100%;
+}
+
+aside li{
+  padding: 0 0 0.5rem 0;
+  list-style-type: none;
+}
+
+.countries{
+  width: 100%;
+  height: 18rem;
+  overflow-y: auto;
+}
+
+.root{
+ width: 80%;
+ overflow-y: auto;
 }
