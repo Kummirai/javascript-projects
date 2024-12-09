@@ -4,6 +4,7 @@ const container = document.querySelector('.root');
 const selectButtons = document.querySelectorAll('.select');
 const modal = document.querySelector('.modal-container');
 let isSelected = false;
+let isLoggedIn = false;
 
 const getRecipe = (letter) => {
   const url = `https://themealdb.com/api/json/v1/1/search.php?f=${letter}`;
@@ -31,8 +32,10 @@ const getRecipe = (letter) => {
             const mealId = button.getAttribute('data-info');
             const myMenu = data.meals.filter((menu) => menu
               .idMeal === mealId);
-            myMenu.map((item) => {
-              modalCard = `
+            !isLoggedIn ?
+              window.location.href = "favorite.html" :
+              myMenu.map((item) => {
+                modalCard = `
         <div class="modal-inner-container">
           <div class="modal-card-container">
             <img src=${item.strMealThumb} alt=${item.strMeal}>
@@ -75,14 +78,14 @@ const getRecipe = (letter) => {
           </div>
         </div>
         `;
-              modal.innerHTML = modalCard;
-              modal.style.display = "block";
-              const closeModal = document.querySelector(
-                '.close-modal');
-              closeModal.addEventListener('click', () => {
-                modal.style.display = "none";
+                modal.innerHTML = modalCard;
+                modal.style.display = "block";
+                const closeModal = document.querySelector(
+                  '.close-modal');
+                closeModal.addEventListener('click', () => {
+                  modal.style.display = "none";
+                })
               })
-            })
           })
         })
 
@@ -97,9 +100,9 @@ selectButtons.forEach(button => {
     mealCard = "";
     getRecipe(button.textContent);
     isSelected = true;
-    if(isSelected){
-      selectButtons.forEach((selectedButton)=>{
-        if(selectedButton.classList.contains('selected')){
+    if (isSelected) {
+      selectButtons.forEach((selectedButton) => {
+        if (selectedButton.classList.contains('selected')) {
           selectedButton.classList.remove('selected')
         }
       })
