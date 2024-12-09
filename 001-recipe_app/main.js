@@ -4,16 +4,66 @@ const container = document.querySelector('.root');
 const selectButtons = document.querySelectorAll('.select');
 const modal = document.querySelector('.modal-container');
 const recipeByCountry = document.querySelectorAll('.countryList');
+const recipeByCategory = document.querySelectorAll('.categoryList');
 
+//www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+let categorySelectionStyle = false;
 let countrySelectionStyle = false;
 let isSelected = false;
 let isLoggedIn = true;
+
+const getRecipeByCategory = (category) => {
+  fetch(`https://themealdb.com/api/json/v1/1/filter.php?c=${category}`)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data.meals)
+      data.meals.map((culture) => {
+        mealCard += `
+        <div class="card-container">
+          <img src=${culture.strMealThumb} alt=${culture.strMeal}>
+          <div class="details">
+            <h2>${culture.strMeal}</h2>
+            <button data-info="${culture.idMeal}" class="recipe">View Recipe</button>
+            <button data-info="${culture.idMeal}" class="recipe save">Save Recipe</button>
+          </div>
+        </div>`;
+        container.innerHTML = mealCard;
+      })
+    })
+}
+
+recipeByCategory.forEach((category) => {
+  category.addEventListener('click', () => {
+    mealCard = "";
+    selectButtons.forEach((selectedButton) => {
+      if (selectedButton.classList.contains('selected')) {
+        selectedButton.classList.remove('selected')
+      }
+    })
+
+    recipeByCountry.forEach((selectedButton) => {
+      if (selectedButton.classList.contains('listStyle')) {
+        selectedButton.classList.remove('listStyle')
+      }
+    })
+
+    categorySelectionStyle = true;
+    if (categorySelectionStyle) {
+      recipeByCategory.forEach((selectedButton) => {
+        if (selectedButton.classList.contains('listStyle')) {
+          selectedButton.classList.remove('listStyle')
+        }
+      })
+      category.classList.add('listStyle');
+    }
+    getRecipeByCategory(category.textContent)
+  })
+})
 
 const getRecipeByCountry = (country) => {
   fetch(`https://themealdb.com/api/json/v1/1/filter.php?a=${country}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data.meals)
       data.meals.map((culture) => {
         mealCard += `
         <div class="card-container">
@@ -35,6 +85,12 @@ recipeByCountry.forEach((country) => {
     selectButtons.forEach((selectedButton) => {
       if (selectedButton.classList.contains('selected')) {
         selectedButton.classList.remove('selected')
+      }
+    })
+
+    recipeByCategory.forEach((selectedButton) => {
+      if (selectedButton.classList.contains('listStyle')) {
+        selectedButton.classList.remove('listStyle')
       }
     })
 
@@ -148,6 +204,13 @@ selectButtons.forEach(button => {
         selectedButton.classList.remove('listStyle')
       }
     })
+
+    recipeByCategory.forEach((selectedButton) => {
+      if (selectedButton.classList.contains('listStyle')) {
+        selectedButton.classList.remove('listStyle')
+      }
+    })
+
     getRecipe(button.textContent);
     isSelected = true;
     if (isSelected) {
