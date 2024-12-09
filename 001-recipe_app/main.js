@@ -3,6 +3,7 @@ let modalCard = '';
 const container = document.querySelector('.root');
 const selectButtons = document.querySelectorAll('.select');
 const modal = document.querySelector('.modal-container');
+let isSelected = false;
 
 const getRecipe = (letter) => {
   const url = `https://themealdb.com/api/json/v1/1/search.php?f=${letter}`;
@@ -94,5 +95,14 @@ selectButtons.forEach(button => {
   button.addEventListener('click', () => {
     mealCard = "";
     getRecipe(button.textContent);
+    isSelected = true;
+    if(isSelected){
+      selectButtons.forEach((selectedButton)=>{
+        if(selectedButton.classList.contains('selected')){
+          selectedButton.classList.remove('selected')
+        }
+      })
+      button.classList.add('selected');
+    }
   })
 })

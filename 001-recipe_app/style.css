@@ -1,37 +1,39 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.main-container{
+
+.main-container {
   width: 100vw;
   position: relative;
 }
-.root{
+
+.root {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); 
-  grid-gap:1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-gap: 1.2rem;
   padding: 0.7rem;
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 2rem 1rem 2rem;
 }
 
-nav{
+nav {
   width: 40%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   font-size: 1rem;
   color: #000;
@@ -40,85 +42,88 @@ nav a{
   font-family: "New times romans";
 }
 
-nav a:hover{
+nav a:hover {
   color: darkorange;
 }
 
-.home-container img{
+.home-container img {
   width: 500px;
 }
 
-main{
+main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(12, 1fr);
   height: 100vh;
 }
 
-main .images{
+main .images {
   grid-column: 1 / 2;
   grid-row: 1 / 6;
   padding: 0 0 0 0;
-  
+
 }
 
-main .images img{
+main .images img {
   width: 105%;
 }
 
-.site-details{
-  grid-column:2 / -1;
-  grid-row: 2 / -1 ;
+.site-details {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 1fr);
   padding: 3rem 1rem 1rem 1rem;
 }
 
-.main-heading{
+.main-heading {
   grid-column: 1 / -1;
 }
 
-.main-heading h1{
+.main-heading h1 {
   font-size: 3rem;
   color: #000;
 }
 
-.main-heading h1>span{
+.main-heading h1>span {
   color: darkorange;
   font-weight: 100;
 }
 
-.description{
+.description {
   grid-column: 1 / -1;
   margin: 1rem 0 0 0;
   font-weight: 300;
 }
 
-.stats{
+.stats {
   margin: 3rem 0 0 0;
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-evenly;
 }
 
-.numbers{
+.numbers {
   font-weight: 700;
   color: #000;
   font-size: 1.3rem;
-  font-family: "New times romans";;
+  font-family: "New times romans";
+  ;
 }
-.stats-sep{
+
+.stats-sep {
   color: #535353;
   font-size: 2rem;
   font-weight: 100;
 }
 
-.stats-dsc{
+.stats-dsc {
   font-weight: 300;
   color: darkorange;
 }
-.homepage-images{
+
+.homepage-images {
   margin: 2.4rem 0 0 0;
   grid-column: 1 / -1;
   grid-row: 4 / 5;
@@ -127,40 +132,41 @@ main .images img{
   align-items: center;
 }
 
-.image{
+.image {
   box-shadow: 0px 0px 10px rgba(45, 45, 45, 1);
 }
 
-.get-started{
+.get-started {
   grid-row-start: 7;
   grid-column-start: 2;
   padding: 6rem 0 0 1.4rem;
 }
 
-.get-started button{
+.get-started button {
   padding: 12px 34px;
   border-radius: 24px;
 }
 
-.get-started a{
+.get-started a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
 }
 
-.image img{
+.image img {
   height: 130px;
-  width:130px;
+  width: 130px;
   object-fit: cover;
 }
-.card-container{
+
+.card-container {
   padding: 0.5rem;
-  box-shadow: 0 0 10px #F0ECEC ;
+  box-shadow: 0 0 10px #F0ECEC;
   border-radius: 0.1rem;
   height: fit-content;
 }
 
-.card-container img{
+.card-container img {
   width: 100%;
   object-fit: cover;
   border-radius: 0.1rem;
@@ -168,39 +174,39 @@ main .images img{
 }
 
 body {
-    font-size: 15pt;
-    /*background-color: rgba(255, 247, 225, 0.3);*/
-    height: 100vh;
-    width: 100vw;
+  font-size: 15pt;
+  /*background-color: rgba(255, 247, 225, 0.3);*/
+  height: 100vh;
+  width: 100vw;
 }
 
-.details{
+.details {
   width: 100%;
   margin: 0.5rem 0rem;
 }
 
-h2{
+h2 {
   font-size: 1rem;
   color: #535353;
   font-family: "New times romans";
 }
 
-p{
+p {
   font-size: 0.9rem;
 }
 
-.category{
+.category {
   font-weight: 400;
   color: darkorange;
   font-size: 0.85rem;
 }
 
-.area{
+.area {
   font-weight: 200;
   font-size: 0.8rem;
 }
 
-button{
+button {
   background: darkorange;
   padding: 5px 15px;
   color: #fff;
@@ -210,26 +216,26 @@ button{
   box-shadow: 0 0 10px #F0ECEC;
 }
 
-h1{
+h1 {
   font-size: 1.4rem;
   font-weight: 100;
   color: #000;
   font-family: "New times romans";
 }
 
-h1 span{
+h1 span {
   color: darkorange;
   font-weight: 700;
   font-family: "New times romans";
 }
 
-.choose{
+.choose {
   padding: 1rem;
 }
 
 /*Modal styles*/
 
-.modal-container{
+.modal-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -242,50 +248,51 @@ h1 span{
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
-.modal-inner-container .modal-card-container{
+.modal-inner-container .modal-card-container {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
   gap: 1rem;
   padding: 1rem;
-  overflow-y: auto ;
+  overflow-y: auto;
   position: relative;
 }
 
-.modal-card-container h2{
+.modal-card-container h2 {
   font-size: 1.8rem;
 }
 
-.modal-container .category{
+.modal-container .category {
   margin: 0.15rem 0;
 }
 
-.modal-container .modal-card-container img{
+.modal-container .modal-card-container img {
   width: 150px;
   border-radius: 50%;
 }
 
-h3{
+h3 {
   font-size: 1rem;
   color: #535353;
 }
-.modal-details h3{
+
+.modal-details h3 {
   padding: 0 0 0 1rem;
 }
 
-.modal-details .ingredients ul{
+.modal-details .ingredients ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1rem 3rem;
 }
 
-.modal-details .instructions{
+.modal-details .instructions {
   padding: 1rem;
   color: #535353;
 }
 
-.close-modal{
+.close-modal {
   position: relative;
   right: -6rem;
   top: -4rem;
@@ -294,44 +301,51 @@ h3{
   color: #535353;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-li{
+li {
   font-size: 0.85rem;
   color: #535353;
 }
 
-.select{
+.select {
   background: transparent;
   border: 1px solid rgba(187, 187, 187, 0.5);
   color: #535353;
 }
 
-.select:hover {
+/*.select:hover {
+  background: transparent;
+  border: 1px solid darkorange;
+  color: #535353;
+}*/
+
+.selected {
   background: transparent;
   border: 1px solid darkorange;
   color: #535353;
 }
 
 /*form page styles*/
-.favorite-container{
+.favorite-container {
   display: flex;
   height: 100%;
 }
 
-.image-section{
+.image-section {
   background: url('/001-recipe_app/images/cook.jpg');
   background-size: cover;
   background-position: center left;
   width: 100%;
 }
-.image-section img{
+
+.image-section img {
   width: 500px;
 }
 
-.form-section{
+.form-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -339,7 +353,7 @@ li{
   flex-direction: column;
 }
 
-.my-form{
+.my-form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -349,18 +363,18 @@ li{
   box-shadow: 0 0 18px #cecece;
 }
 
-.my-form div{
+.my-form div {
   display: flex;
   flex-direction: column;
 }
 
-.my-form label{
+.my-form label {
   font-size: 0.85rem;
   margin: 0 0 0.3rem 0;
   color: #535353;
 }
 
-.my-form input{
+.my-form input {
   border: none;
   width: 270px;
   padding: 0.5rem;
@@ -370,31 +384,32 @@ li{
   font-weight: 300;
 }
 
-.my-form button{
+.my-form button {
   font-size: 0.9rem;
   padding: 0.5rem;
 }
 
-.my-form a{
+.my-form a {
   font-size: 0.8rem;
   color: #000;
   text-decoration: none;
   font-weight: 300;
 }
-.welcome-back{
+
+.welcome-back {
   margin: 0 0 1.8rem 0;
   display: flex;
   flex-direction: column;
-  
+
 }
 
-.welcome-back h2{
+.welcome-back h2 {
   font-size: 2.4rem;
   color: darkorange;
   font-weight: 400;
 }
 
-.welcome-back p{
+.welcome-back p {
   font-size: 0.9rem;
   color: #000;
   font-weight: 100;
