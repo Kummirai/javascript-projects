@@ -5,6 +5,7 @@ const selectButtons = document.querySelectorAll('.select');
 const modal = document.querySelector('.modal-container');
 const recipeByCountry = document.querySelectorAll('.countryList');
 
+let countrySelectionStyle = false;
 let isSelected = false;
 let isLoggedIn = true;
 
@@ -31,6 +32,21 @@ const getRecipeByCountry = (country) => {
 recipeByCountry.forEach((country) => {
   country.addEventListener('click', () => {
     mealCard = "";
+    selectButtons.forEach((selectedButton) => {
+      if (selectedButton.classList.contains('selected')) {
+        selectedButton.classList.remove('selected')
+      }
+    })
+
+    countrySelectionStyle = true;
+    if (countrySelectionStyle) {
+      recipeByCountry.forEach((selectedButton) => {
+        if (selectedButton.classList.contains('listStyle')) {
+          selectedButton.classList.remove('listStyle')
+        }
+      })
+      country.classList.add('listStyle');
+    }
     getRecipeByCountry(country.textContent)
   })
 })
