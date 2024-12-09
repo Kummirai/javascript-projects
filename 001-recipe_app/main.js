@@ -23,6 +23,7 @@ const getRecipe = (letter) => {
             <p class="area">${recipe.strArea}</p>
           </div>
           <button data-info="${recipe.idMeal}" class="recipe">View Recipe</button>
+          <button data-info="${recipe.idMeal}" class="recipe save">Save Recipe</button>
         </div>`;
 
         recipeButtons.forEach((button) => {
