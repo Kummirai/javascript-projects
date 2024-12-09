@@ -8,6 +8,33 @@ const recipeByCountry = document.querySelectorAll('.countryList');
 let isSelected = false;
 let isLoggedIn = true;
 
+const getRecipeByCountry = (country) => {
+  fetch(`https://themealdb.com/api/json/v1/1/filter.php?a=${country}`)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data.meals)
+      data.meals.map((culture) => {
+        mealCard += `
+        <div class="card-container">
+          <img src=${culture.strMealThumb} alt=${culture.strMeal}>
+          <div class="details">
+            <h2>${culture.strMeal}</h2>
+            <button data-info="${culture.idMeal}" class="recipe">View Recipe</button>
+            <button data-info="${culture.idMeal}" class="recipe save">Save Recipe</button>
+          </div>
+        </div>`;
+        container.innerHTML = mealCard;
+      })
+    })
+}
+
+recipeByCountry.forEach((country) => {
+  country.addEventListener('click', () => {
+    mealCard = "";
+    getRecipeByCountry(country.textContent)
+  })
+})
+
 const getRecipe = (letter) => {
   const url = `https://themealdb.com/api/json/v1/1/search.php?f=${letter}`;
   fetch(url)
@@ -138,5 +165,5 @@ myForm.addEventListener('submit', (event) => {
 })
 
 recipeByCountry.forEach((country) => {
-    console.log(country.textContent)
+  console.log(country.textContent)
 })
