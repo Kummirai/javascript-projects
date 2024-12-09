@@ -3,8 +3,10 @@ let modalCard = '';
 const container = document.querySelector('.root');
 const selectButtons = document.querySelectorAll('.select');
 const modal = document.querySelector('.modal-container');
+const recipeByCountry = document.querySelectorAll('.countryList');
+
 let isSelected = false;
-let isLoggedIn = false;
+let isLoggedIn = true;
 
 const getRecipe = (letter) => {
   const url = `https://themealdb.com/api/json/v1/1/search.php?f=${letter}`;
@@ -111,26 +113,30 @@ selectButtons.forEach(button => {
   })
 })
 const myForm = document.querySelector('.my-form');
-myForm.addEventListener('submit', (event)=>{
+myForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const email = document.querySelector('#email').value;
-const password = document.querySelector('#password').value;
-  
+  const password = document.querySelector('#password').value;
+
   class User {
     constructor(email, password) {
       this.email = email,
-      this.password = password
+        this.password = password
     }
   }
-  
+
   let users = localStorage.getItem('users');
-  users = users? JSON.parse(users) : [];
-  
+  users = users ? JSON.parse(users) : [];
+
   const user = new User(email, password);
   users = [...users, user];
-  
+
   localStorage.setItem('users', JSON.stringify(users));
   localStorage.getItem('users');
   //window.location.href = "recipes.html";
   console.log(users);
+})
+
+recipeByCountry.forEach((country) => {
+    console.log(country.textContent)
 })
