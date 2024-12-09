@@ -164,14 +164,15 @@ main .images img {
 .card-container {
   padding: 0.5rem;
   box-shadow: 0 0 10px #F0ECEC;
-  border-radius: 0.1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #F0ECEC;
   height: fit-content;
 }
 
 .card-container img {
   width: 100%;
   object-fit: cover;
-  border-radius: 0.1rem;
+  border-radius: 0.4rem;
   box-shadow: 5px 5px 5px #BDB9B9;
 }
 
