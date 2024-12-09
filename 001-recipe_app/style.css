@@ -15,8 +15,8 @@
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  grid-gap: 1.2rem;
-  padding: 0.7rem;
+  grid-gap: 1.7rem;
+  padding: 1rem;
 }
 
 header {
@@ -162,10 +162,10 @@ main .images img {
 }
 
 .card-container {
-  padding: 0.5rem;
+  padding: 0.4rem;
   box-shadow: 0 0 10px #F0ECEC;
   border-radius: 0.5rem;
-  border: 1px solid #F0ECEC;
+ /* border: 1px solid #F0ECEC;*/
   height: fit-content;
 }
 
