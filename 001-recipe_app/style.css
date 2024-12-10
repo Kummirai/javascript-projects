@@ -296,6 +296,10 @@ h3 {
   color: #535353;
 }
 
+.modal-details .instructions ol{
+  padding: 0 0 0 2.4rem;
+}
+
 .close-modal {
   position: relative;
   right: -8rem;

@@ -136,6 +136,10 @@ const getRecipe = (letter) => {
             !isLoggedIn ?
               window.location.href = "favorite.html" :
               myMenu.map((item) => {
+                
+                const instructions = item.strInstructions.split('.');
+                console.log(instructions)
+                
                 modalCard = `
         <div class="modal-inner-container">
           <div class="modal-card-container">
@@ -174,8 +178,9 @@ const getRecipe = (letter) => {
           </div>
           <h3>Cooking Instructions</h3>
           <div class="instructions">
-            
-            <p>${item.strInstructions}</p>
+            <ol>${instructions.map(inst =>
+                `<li>${inst}</li>`
+            )}</ol>
           </div>
         </div>
         `;
