@@ -29,11 +29,16 @@
     </div>
     <div class="form-section">
       <div class="welcome-back">
-        <h2>Welcome Back</h2>
-        <p>Log in to view & save your recipes.</p>
+        <h2>Welcome</h2>
+        <p>Sign up to view & save your recipes.</p>
       </div>
-      <form class="my-form" action="/recipes.html" accept-charset="utf-8">
-        <div class="username">
+      <form class="my-form" action="/recipes.html" method="POST"
+        accept-charset="utf-8">
+         <div class="username">
+          <label for="name">Email</label>
+          <input type="text" name="name" id="name" placeholder="Username" required autofocus>
+        </div>
+        <div class="email">
           <label for="email">Email</label>
           <input type="email" name="email" id="email" placeholder="Email" required autofocus>
         </div>
@@ -42,8 +47,8 @@
           <input type="password" name="password" id="password"
             placeholder="Password" required>
         </div>
-        <button id="sign-up"type="submit">Log In</button>
-        <p><a href="signup.html">Dont have an account? Register for free.</a></p>
+        <button type="submit">Sign up</button>
+        <p><a href="favorite.html">I already have an account? Log In.</a></p>
       </form>
     </div>
   </div>
