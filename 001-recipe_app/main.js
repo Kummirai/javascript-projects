@@ -140,22 +140,35 @@ const getRecipe = (letter) => {
             const myMenu = data.meals.filter((menu) => menu
               .idMeal === mealId);
             myMenu.map((video) => {
-              console.log(video.strYoutube)
 
-              function getYouTubeVideoID(url) {
+            function getYouTubeVideoID(url) {
                 const regExp =
                   /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
                 const match = url.match(regExp);
                 return (match && match[2].length === 11) ?
                   match[2] : null;
               }
-
               // Example usage:
               const url = video.strYoutube;
               const videoID = getYouTubeVideoID(url);
-              console.log(videoID); // Outputs: VIDEO_ID
 
-              
+              fetch(
+                  `https://www.googleapis.com/youtube/v3/videos?id=${videoID}&key=AIzaSyAJ_yG_ayVafcJs_BHjrkOe7e3T9WbfmOM&part=snippet,contentDetails,statistics,status`)
+                .then(response => response.json())
+                .then(data => {
+                  videoPlayer = `
+              <iframe width="840" height="600" src="https://www.youtube.com/embed/${videoID}" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-picture allowfullscreen"></iframe>
+              <p class="close-modal">&times;</p>
+            `;
+                  vplayer.innerHTML = videoPlayer;
+                  vplayer.style.display = "block";
+                  const closeModal = document.querySelector(
+                    '.close-modal');
+                  closeModal.addEventListener('click',
+                    () => {
+                      vplayer.style.display = "none";
+                    })
+                })
             })
           })
         })
