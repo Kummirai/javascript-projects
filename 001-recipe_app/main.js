@@ -157,14 +157,14 @@ const getRecipe = (letter) => {
                 .then(response => response.json())
                 .then(data => {
                   videoPlayer = `
-              <iframe width="800" height="460" src="https://www.youtube.com/embed/${videoID}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-picture allowfullscreen"></iframe>
-              <p class="close-modal">&times;</p>
+              <iframe width="800" height="450" src="https://www.youtube.com/embed/${videoID}" frameborder="0" allow="accelerometer"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-picture allowfullscreen></iframe>
+              <button class="close-player">Close</button>
             `;
                   vplayer.innerHTML = videoPlayer;
                   vplayer.style.display = "block";
-                  const closeModal = document.querySelector(
-                    '.close-modal');
-                  closeModal.addEventListener('click',
+                  const closePlayer = document.querySelector(
+                    '.close-player');
+                  closePlayer.addEventListener('click',
                     () => {
                       vplayer.style.display = "none";
                     })

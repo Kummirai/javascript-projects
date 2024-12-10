@@ -253,7 +253,18 @@ h1 span {
 }
 
 iframe{
-  box-shadow: 5px 5px 5px #2D2D2D;
+  box-shadow: 0px 0px 5px #2D2D2D;
+  position: relative;
+}
+
+.close-player{
+  position: absolute;
+  top: -2.4rem;
+  right: 0rem;
+  font-size: 0.75rem;
+  font-weight: 0;
+  background: #535353;
+  padding: 4px 7px;
 }
 
 .vplayer {
