@@ -157,7 +157,7 @@ const getRecipe = (letter) => {
                 .then(response => response.json())
                 .then(data => {
                   videoPlayer = `
-              <iframe width="840" height="600" src="https://www.youtube.com/embed/${videoID}" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-picture allowfullscreen"></iframe>
+              <iframe width="800" height="460" src="https://www.youtube.com/embed/${videoID}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-picture allowfullscreen"></iframe>
               <p class="close-modal">&times;</p>
             `;
                   vplayer.innerHTML = videoPlayer;
