@@ -128,7 +128,7 @@ const getRecipe = (letter) => {
             <p class="area">${recipe.strArea}</p>
           </div>
           <div class="buttons">
-            <button data-info="${recipe.idMeal}" class="recipe">View</button>
+            <button data-info="${recipe.idMeal}" class="recipe">Recipe</button>
             <button data-info="${recipe.idMeal}" class="recipe save">Save</button>
             <button data-info="${recipe.idMeal}" class="watch save">Watch</button>
           </div>
@@ -153,7 +153,7 @@ const getRecipe = (letter) => {
               const videoID = getYouTubeVideoID(url);
 
               fetch(
-                  `https://www.googleapis.com/youtube/v3/videos?id=${videoID}&key=AIzaSyAJ_yG_ayVafcJs_BHjrkOe7e3T9WbfmOM&part=snippet,contentDetails,statistics,status`)
+                  `https://www.googleapis.com/youtube/v3/videos?id=${videoID}&=snippet,contentDetails,statistics,status`)
                 .then(response => response.json())
                 .then(data => {
                   videoPlayer = `
