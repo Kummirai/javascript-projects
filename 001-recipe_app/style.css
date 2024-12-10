@@ -165,7 +165,7 @@ main .images img {
   padding: 0.4rem;
   box-shadow: 0 0 10px #F0ECEC;
   border-radius: 0.5rem;
- /* border: 1px solid #F0ECEC;*/
+  /* border: 1px solid #F0ECEC;*/
   height: fit-content;
 }
 
@@ -248,7 +248,21 @@ h1 span {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px) saturate(180%);
   /*background-color: rgba(255, 247, 225, 0.8);*/
- background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(209, 213, 219, 0.7);
+}
+
+.vplayer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  /*background-color: rgba(255, 247, 225, 0.8);*/
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(209, 213, 219, 0.7);
 }
 
@@ -296,7 +310,7 @@ h3 {
   color: #535353;
 }
 
-.modal-details .instructions ol{
+.modal-details .instructions ol {
   padding: 0 0 0 2.4rem;
 }
 
@@ -305,7 +319,7 @@ h3 {
   right: -8rem;
   top: -3.5rem;
   font-size: 2.4rem;
-  padding:  0 0.7rem;
+  padding: 0 0.7rem;
   color: #535353;
   font-weight: 700;
 }
@@ -431,12 +445,12 @@ li {
   color: #535353;
 }
 
-.recipes{
+.recipes {
   width: 100vw;
   display: flex;
 }
 
-aside{
+aside {
   width: 20%;
   display: flex;
   flex-direction: column;
@@ -444,32 +458,38 @@ aside{
   padding: 0 0 0 1rem;
 }
 
-aside h2{
+aside h2 {
   padding: 0.5rem 0;
 }
 
-aside ul{
+aside ul {
   width: 100%;
 }
 
-aside li{
+aside li {
   padding: 0 0 0.5rem 0;
   list-style-type: none;
 }
 
-.countries{
+.countries {
   width: 100%;
   height: 18rem;
   overflow-y: auto;
 }
 
-.root{
- width: 80%;
- height: 100vh;
- overflow-y: auto;
+.root {
+  width: 80%;
+  height: 100vh;
+  overflow-y: auto;
 }
 
-.listStyle{
+.listStyle {
   color: darkorange;
   font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

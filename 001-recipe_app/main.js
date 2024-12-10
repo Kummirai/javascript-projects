@@ -1,10 +1,12 @@
 let mealCard = '';
 let modalCard = '';
+let videoPlayer = '';
 const container = document.querySelector('.root');
 const selectButtons = document.querySelectorAll('.select');
 const modal = document.querySelector('.modal-container');
 const recipeByCountry = document.querySelectorAll('.countryList');
 const recipeByCategory = document.querySelectorAll('.categoryList');
+const vplayer = document.querySelector('.vplayer');
 
 //www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
 let categorySelectionStyle = false;
@@ -115,6 +117,7 @@ const getRecipe = (letter) => {
       data.meals.forEach(recipe => {
         container.innerHTML = mealCard;
         const recipeButtons = document.querySelectorAll('.recipe');
+        const videos = document.querySelectorAll('.watch');
 
         mealCard += `
         <div class="card-container">
@@ -124,9 +127,49 @@ const getRecipe = (letter) => {
             <p class="category">${recipe.strCategory}</p>
             <p class="area">${recipe.strArea}</p>
           </div>
-          <button data-info="${recipe.idMeal}" class="recipe">View Recipe</button>
-          <button data-info="${recipe.idMeal}" class="recipe save">Save Recipe</button>
+          <div class="buttons">
+            <button data-info="${recipe.idMeal}" class="recipe">View</button>
+            <button data-info="${recipe.idMeal}" class="recipe save">Save</button>
+            <button data-info="${recipe.idMeal}" class="watch save">Watch</button>
+          </div>
         </div>`;
+
+        videos.forEach((button) => {
+          button.addEventListener('click', () => {
+            const mealId = button.getAttribute('data-info');
+            const myMenu = data.meals.filter((menu) => menu
+              .idMeal === mealId);
+            myMenu.map((video) => {
+              console.log(video.strYoutube)
+
+              function getYouTubeVideoID(url) {
+                const regExp =
+                  /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+                const match = url.match(regExp);
+                return (match && match[2].length === 11) ?
+                  match[2] : null;
+              }
+
+              // Example usage:
+              const url = video.strYoutube;
+              const videoID = getYouTubeVideoID(url);
+              console.log(videoID); // Outputs: VIDEO_ID
+              
+              videoPlayer = `
+              <iframe width="840" height="600" src="https://www.youtube.com/embed/${videoID} frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-picture" allowfullscreen></iframe>
+              <p class="close-modal">&times;</p>
+            `;
+              console.log(videoPlayer)
+              vplayer.innerHTML = videoPlayer;
+              vplayer.style.display = "block";
+              const closeModal = document.querySelector(
+                '.close-modal');
+              closeModal.addEventListener('click', () => {
+                vplayer.style.display = "none";
+              })
+            })
+          })
+        })
 
         recipeButtons.forEach((button) => {
           button.addEventListener('click', () => {
@@ -136,10 +179,9 @@ const getRecipe = (letter) => {
             !isLoggedIn ?
               window.location.href = "favorite.html" :
               myMenu.map((item) => {
-                
-                const instructions = item.strInstructions.split('.');
-                console.log(instructions)
-                
+
+                const instructions = item.strInstructions.split(
+                  '.');
                 modalCard = `
         <div class="modal-inner-container">
           <div class="modal-card-container">
