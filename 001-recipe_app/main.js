@@ -154,19 +154,8 @@ const getRecipe = (letter) => {
               const url = video.strYoutube;
               const videoID = getYouTubeVideoID(url);
               console.log(videoID); // Outputs: VIDEO_ID
+
               
-              videoPlayer = `
-              <iframe width="840" height="600" src="https://www.youtube.com/embed/${videoID} frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-picture" allowfullscreen></iframe>
-              <p class="close-modal">&times;</p>
-            `;
-              console.log(videoPlayer)
-              vplayer.innerHTML = videoPlayer;
-              vplayer.style.display = "block";
-              const closeModal = document.querySelector(
-                '.close-modal');
-              closeModal.addEventListener('click', () => {
-                vplayer.style.display = "none";
-              })
             })
           })
         })
