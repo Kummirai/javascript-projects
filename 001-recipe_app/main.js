@@ -141,7 +141,7 @@ const getRecipe = (letter) => {
               .idMeal === mealId);
             myMenu.map((video) => {
 
-            function getYouTubeVideoID(url) {
+              function getYouTubeVideoID(url) {
                 const regExp =
                   /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
                 const match = url.match(regExp);
@@ -153,7 +153,8 @@ const getRecipe = (letter) => {
               const videoID = getYouTubeVideoID(url);
 
               fetch(
-                  `https://www.googleapis.com/youtube/v3/videos?id=${videoID}&=snippet,contentDetails,statistics,status`)
+                  `https://www.googleapis.com/youtube/v3/videos?id=${videoID}&=snippet,contentDetails,statistics,status`
+                )
                 .then(response => response.json())
                 .then(data => {
                   videoPlayer = `
@@ -162,8 +163,9 @@ const getRecipe = (letter) => {
             `;
                   vplayer.innerHTML = videoPlayer;
                   vplayer.style.display = "block";
-                  const closePlayer = document.querySelector(
-                    '.close-player');
+                  const closePlayer = document
+                    .querySelector(
+                      '.close-player');
                   closePlayer.addEventListener('click',
                     () => {
                       vplayer.style.display = "none";
@@ -272,31 +274,37 @@ selectButtons.forEach(button => {
     }
   })
 })
-const myForm = document.querySelector('.my-form');
-myForm.addEventListener('submit', (event) => {
+
+const signUpForm = document.querySelector('#signup-form');
+
+signUpForm.addEventListener('submit', (event) => {
+
   event.preventDefault();
+
   const email = document.querySelector('#email').value;
   const password = document.querySelector('#password').value;
+  const username = document.querySelector('#username').value;
 
   class User {
-    constructor(email, password) {
-      this.email = email,
+    constructor(username, email, password) {
+      this.username = username,
+        this.email = email,
         this.password = password
     }
   }
 
-  let users = localStorage.getItem('users');
-  users = users ? JSON.parse(users) : [];
+  let newUser = new User(username, email, password);
 
-  const user = new User(email, password);
-  users = [...users, user];
+  let users = JSON.parse(localStorage.getItem('users')) || [];
 
-  localStorage.setItem('users', JSON.stringify(users));
-  localStorage.getItem('users');
-  //window.location.href = "recipes.html";
-  console.log(users);
-})
+  let existingUser  = users.find(user => user.email === newUser.email);
 
-recipeByCountry.forEach((country) => {
-  console.log(country.textContent)
+  if (existingUser?.email !== undefined) {
+    alert("User already exists!")
+  } else {
+    users = [...users, newUser];
+    localStorage.setItem('users', JSON.stringify(users));
+    alert("User successfully registered!")
+    window.location.href = "favorite.html";
+  }
 })
