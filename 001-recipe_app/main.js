@@ -8,6 +8,8 @@ const recipeByCountry = document.querySelectorAll('.countryList');
 const recipeByCategory = document.querySelectorAll('.categoryList');
 const vplayer = document.querySelector('.vplayer');
 
+
+
 //www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
 let categorySelectionStyle = false;
 let countrySelectionStyle = false;
@@ -304,37 +306,6 @@ signUpForm.addEventListener('submit', (event) => {
     users = [...users, newUser];
     localStorage.setItem('users', JSON.stringify(users));
     alert("User successfully registered!")
-    window.location.href = "favorite.html";
+    window.location.href = "login.html";
   }
-})
-
-const logInForm = document.querySelector('#login');
-logInForm.addEventListener('submit', (event) => {
-  
-  event.preventDefault();
-
-  const email = document.querySelector('#login-email').value;
-  const password = document.querySelector('#login-password').value;
-
-  class LogIn {
-    constructor(email, password) {
-      this.email = email,
-      this.password = password
-    }
-  }
-
-  let regUser = new LogIn(email, password);
-  let users = JSON.parse(localStorage.getItem('users'));
-  let registeredUser = users.find(user => user.email === regUser.email);
-  
-  console.log(registeredUser);
-
-  /*if (existingUser?.email !== undefined) {
-    alert("User already exists!")
-  } else {
-    users = [...users, newUser];
-    localStorage.setItem('users', JSON.stringify(users));
-    alert("User successfully registered!")
-    window.location.href = "favorite.html";
-  }*/
 })
