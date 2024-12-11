@@ -526,7 +526,8 @@ aside li {
   font-size: 0.85rem;
   padding: 0.15rem 0.3rem;
   margin: 0 0 0.3rem 0;
-  background: #F0F1F4;
+  background: darkorange;
+  color: white;
 }
 
 .show{
