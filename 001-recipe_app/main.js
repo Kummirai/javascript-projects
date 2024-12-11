@@ -128,9 +128,9 @@ const getRecipe = (letter) => {
             <p class="area">${recipe.strArea}</p>
           </div>
           <div class="buttons">
-            <button data-info="${recipe.idMeal}" class="recipe">Recipe</button>
-            <button data-info="${recipe.idMeal}" class="recipe save">Save</button>
-            <button data-info="${recipe.idMeal}" class="watch save">Watch</button>
+            <i data-info="${recipe.idMeal}" class=" fas fa-eye recipe save "></i>
+            <i data-info="${recipe.idMeal}"class="fas fa-save recipe"></i>
+            <i data-info="${recipe.idMeal}" class="fas fa-play watch save"></i>
           </div>
         </div>`;
 
