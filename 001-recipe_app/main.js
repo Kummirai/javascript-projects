@@ -7,14 +7,23 @@ const modal = document.querySelector('.modal-container');
 const recipeByCountry = document.querySelectorAll('.countryList');
 const recipeByCategory = document.querySelectorAll('.categoryList');
 const vplayer = document.querySelector('.vplayer');
-
-
+const account = document.querySelector('.account');
+const userIcon = document.querySelector('.fa-user');
 
 //www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
 let categorySelectionStyle = false;
 let countrySelectionStyle = false;
 let isSelected = false;
-let isLoggedIn = true;
+let isLoggedIn = true
+
+userIcon.addEventListener('click', () => {
+  if (account.classList.contains('show')) {
+    account.classList.remove('show')
+  } else {
+    account.classList.add('show')
+  }
+})
+
 
 const getRecipeByCategory = (category) => {
   fetch(`https://themealdb.com/api/json/v1/1/filter.php?c=${category}`)

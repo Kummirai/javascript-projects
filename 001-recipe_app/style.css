@@ -23,7 +23,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem 0rem 1rem 2rem;
   position: sticky;
 }
 
@@ -32,7 +32,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: sticky;
+  position: relative;
 }
 
 nav a {
@@ -505,4 +505,30 @@ aside li {
   background: transparent;
   color: #979494;
   margin: 0.7rem;
+}
+
+.fa-user{
+  font-size: 1.8rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #cecece;
+  border-radius: 50%;
+}
+
+.account{
+  display: none;
+  position: absolute;
+  top: 6rem;
+  right: 1rem;
+}
+
+.account p{
+  font-family: serif;
+  font-size: 0.85rem;
+  padding: 0.15rem 0.3rem;
+  margin: 0 0 0.3rem 0;
+  background: #F0F1F4;
+}
+
+.show{
+  display: block;
 }
