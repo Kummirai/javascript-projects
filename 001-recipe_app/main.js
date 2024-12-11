@@ -317,7 +317,7 @@ logInForm.addEventListener('submit', (event) => {
   const password = document.querySelector('#login-password').value;
 
   class LogIn {
-    constructor(username, email, password) {
+    constructor(email, password) {
       this.email = email,
       this.password = password
     }
