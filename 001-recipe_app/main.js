@@ -213,12 +213,18 @@ const getRecipe = (letter) => {
             let myRecipes = JSON.parse(localStorage.getItem(
               'myRecipes')) || [];
 
-            myRecipes = [...myRecipes, saveRecipe];
-            localStorage.setItem('myRecipes', JSON.stringify(
-              myRecipes));
+            let existingRecipe = myRecipes.find(recipe => recipe.id ===
+              saveRecipe.id);
 
-            myRecipes = JSON.parse(localStorage.getItem(
-              'myRecipes'));
+            if (existingRecipe?.id !== undefined) {
+              alert("Recipe already exists your saved recipes!")
+            } else {
+              myRecipes = [...myRecipes, saveRecipe];
+              localStorage.setItem('myRecipes', JSON.stringify(
+                myRecipes));
+              alert("Recipe successfully saved!")
+            }
+
           })
         })
 
