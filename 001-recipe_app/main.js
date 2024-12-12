@@ -46,6 +46,7 @@ const home = () => {
     if (isLogged.textContent === 'Log out') {
       window.location.href = 'savedRecipes.html'
     } else {
+      alert("Login to view your saved recipes")
       window.location.href = "login.html"
     }
   })
@@ -209,7 +210,7 @@ const getRecipe = (letter) => {
                   .then(response => response.json())
                   .then(data => {
                     videoPlayer = `
-              <iframe width="800" height="450" src="https://www.youtube.com/embed/${videoID}" frameborder="0" allow="accelerometer"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-picture allowfullscreen></iframe>
+              <iframe width="800" height="450" src="https://www.youtube.com/embed/${videoID}?rel=0" frameborder="0" allow="accelerometer"; autoplay ; clipboard-write; encrypted-media; gyroscope; picture-picture allowfullscreen></iframe>
               <button class="close-player">Close</button>
             `;
                     vplayer.innerHTML = videoPlayer;

@@ -16,7 +16,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-gap: 1.7rem;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 header {
@@ -37,15 +37,16 @@ nav {
 
 nav a {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #000;
-  border-bottom: 1px solid darkorange;
-  padding: 0 0 0.3rem 0;
+  border: 1px solid rgba(187, 187, 187, 0.5);
+  border-radius: 15px;
+  padding: 0.3rem 1rem ;
   font-family: "New times romans";
 }
 
-nav a:hover {
-  color: darkorange;
+.nav-link.active {
+  border-bottom: 1px solid darkorange;
 }
 
 .home-container img {
@@ -528,7 +529,7 @@ aside li {
   margin: 0 0 0.3rem 0;
   background: #B3B3B3;
   color: white;
-  border-radius: 2px;
+  border-radius: px;
 }
 
 .show{
