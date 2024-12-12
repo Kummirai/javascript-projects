@@ -14,7 +14,7 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   grid-gap: 1.7rem;
   padding: 0 1rem;
 }
@@ -171,8 +171,11 @@ main .images img {
 
 .card-container img {
   width: 100%;
+  height: auto;
+  border-radius: 1%;
   object-fit: cover;
   box-shadow: 5px 5px 5px #BDB9B9;
+  margin: auto;
 }
 
 body {
@@ -496,7 +499,7 @@ aside li {
 }
 
 .buttons {
-  width: 55%;
+  width: 75%;
   display: flex;
   justify-content: space-between;
   align-items: center;
