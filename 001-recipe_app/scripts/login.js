@@ -1,4 +1,5 @@
 const logInForm = document.querySelector('#login');
+const isLogged = document.querySelector('.user');
 
 logInForm.addEventListener('submit', (event) => {
 
@@ -21,6 +22,13 @@ logInForm.addEventListener('submit', (event) => {
 
   if (registeredUser && registeredUser.password === regUser.password) {
     alert("Login successful!");
+    
+    const logInStatus = 'loggedIn';
+    const user = registeredUser.username;
+    
+    localStorage.setItem('logInStatus', logInStatus);
+    localStorage.setItem('user', user);
+    
     window.location.href = "recipes.html";
   } else {
     alert("Invalid email or password!");
