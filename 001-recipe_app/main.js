@@ -182,8 +182,11 @@ const getRecipe = (letter) => {
           </div>
         </div>`;
 
+        const isLogged = document.querySelector('.islogged');
+        const logInStatus = localStorage.getItem('logInStatus');
         const savedSection = document.querySelector('.saved-section');
         const saved = document.querySelectorAll('.fa-save');
+
         saved.forEach((save) => {
           save.addEventListener('click', () => {
             console.log("you clicked me!")
@@ -213,18 +216,22 @@ const getRecipe = (letter) => {
             let myRecipes = JSON.parse(localStorage.getItem(
               'myRecipes')) || [];
 
-            let existingRecipe = myRecipes.find(recipe => recipe.id ===
+            let existingRecipe = myRecipes.find(recipe => recipe
+              .id ===
               saveRecipe.id);
 
-            if (existingRecipe?.id !== undefined) {
-              alert("Recipe already exists your saved recipes!")
+            if (logInStatus === 'loggedIn') {
+              if (existingRecipe?.id !== undefined) {
+                alert("Recipe already exists your saved recipes!")
+              } else {
+                myRecipes = [...myRecipes, saveRecipe];
+                localStorage.setItem('myRecipes', JSON.stringify(
+                  myRecipes));
+                alert("Recipe successfully saved!")
+              }
             } else {
-              myRecipes = [...myRecipes, saveRecipe];
-              localStorage.setItem('myRecipes', JSON.stringify(
-                myRecipes));
-              alert("Recipe successfully saved!")
+              alert("Log in to save your recipes!")
             }
-
           })
         })
 
