@@ -15,6 +15,8 @@ if (logInStatus === 'loggedIn') {
 
 isLogged.addEventListener('click', () => {
   if (isLogged.textContent === 'Log out') {
+    localStorage.removeItem('logInStatus');
+    localStorage.removeItem('user');
     window.location.href = 'index.html'
   } else {
     window.location.href = 'login.html'

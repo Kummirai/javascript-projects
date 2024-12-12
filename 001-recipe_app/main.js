@@ -14,7 +14,6 @@ const userIcon = document.querySelector('.fa-user');
 let categorySelectionStyle = false;
 let countrySelectionStyle = false;
 let isSelected = false;
-let isLoggedIn = true
 
 userIcon.addEventListener('click', () => {
   if (account.classList.contains('show')) {
@@ -150,49 +149,56 @@ const getRecipe = (letter) => {
             const mealId = button.getAttribute('data-info');
             const myMenu = data.meals.filter((menu) => menu
               .idMeal === mealId);
-            myMenu.map((video) => {
+            const userStatus = localStorage.getItem(
+            'logInStatus');
 
-              function getYouTubeVideoID(url) {
-                const regExp =
-                  /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
-                const match = url.match(regExp);
-                return (match && match[2].length === 11) ?
-                  match[2] : null;
-              }
-              // Example usage:
-              const url = video.strYoutube;
-              const videoID = getYouTubeVideoID(url);
+            userStatus === 'loggedIn' ?
+              myMenu.map((video) => {
 
-              fetch(
-                  `https://www.googleapis.com/youtube/v3/videos?id=${videoID}&=snippet,contentDetails,statistics,status`
-                )
-                .then(response => response.json())
-                .then(data => {
-                  videoPlayer = `
+                function getYouTubeVideoID(url) {
+                  const regExp =
+                    /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+                  const match = url.match(regExp);
+                  return (match && match[2].length === 11) ?
+                    match[2] : null;
+                }
+                // Example usage:
+                const url = video.strYoutube;
+                const videoID = getYouTubeVideoID(url);
+
+                fetch(
+                    `https://www.googleapis.com/youtube/v3/videos?id=${videoID}&=snippet,contentDetails,statistics,status`
+                  )
+                  .then(response => response.json())
+                  .then(data => {
+                    videoPlayer = `
               <iframe width="800" height="450" src="https://www.youtube.com/embed/${videoID}" frameborder="0" allow="accelerometer"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-picture allowfullscreen></iframe>
               <button class="close-player">Close</button>
             `;
-                  vplayer.innerHTML = videoPlayer;
-                  vplayer.style.display = "block";
-                  const closePlayer = document
-                    .querySelector(
-                      '.close-player');
-                  closePlayer.addEventListener('click',
-                    () => {
-                      vplayer.style.display = "none";
-                    })
-                })
-            })
+                    vplayer.innerHTML = videoPlayer;
+                    vplayer.style.display = "block";
+                    const closePlayer = document
+                      .querySelector(
+                        '.close-player');
+                    closePlayer.addEventListener('click',
+                      () => {
+                        vplayer.style.display = "none";
+                      })
+                  })
+              }) :
+              alert("Log in to watch recipe video")
           })
         })
+
+
+        const isLoggedIn = localStorage.getItem('logInStatus');
 
         recipeButtons.forEach((button) => {
           button.addEventListener('click', () => {
             const mealId = button.getAttribute('data-info');
             const myMenu = data.meals.filter((menu) => menu
               .idMeal === mealId);
-            !isLoggedIn ?
-              window.location.href = "favorite.html" :
+            isLoggedIn === "loggedIn" ?
               myMenu.map((item) => {
 
                 const instructions = item.strInstructions.split(
@@ -248,10 +254,11 @@ const getRecipe = (letter) => {
                 closeModal.addEventListener('click', () => {
                   modal.style.display = "none";
                 })
-              })
+              }) : (
+                alert('Log in to view and save recipes!')
+              )
           })
         })
-
       })))
     .catch(error => console.log(error))
 }
