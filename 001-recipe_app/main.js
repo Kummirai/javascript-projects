@@ -177,10 +177,50 @@ const getRecipe = (letter) => {
           </div>
           <div class="buttons">
             <i data-info="${recipe.idMeal}" class=" fas fa-eye recipe save "></i>
-            <i data-info="${recipe.idMeal}"class="fas fa-save recipe"></i>
+            <i data-info="${recipe.idMeal}"class="fas fa-save"></i>
             <i data-info="${recipe.idMeal}" class="fas fa-play watch save"></i>
           </div>
         </div>`;
+
+        const savedSection = document.querySelector('.saved-section');
+        const saved = document.querySelectorAll('.fa-save');
+        saved.forEach((save) => {
+          save.addEventListener('click', () => {
+            console.log("you clicked me!")
+
+            class SavedRecipe {
+              constructor(name, image, id, category, area) {
+                this.name = name,
+                  this.image = image,
+                  this.id = id,
+                  this.category = category,
+                  this.area = area
+              }
+            }
+
+            const id = save.getAttribute('data-info');
+            const myMenu = data.meals.filter((menu) => menu
+              .idMeal === id);
+
+            const saveRecipe = new SavedRecipe(
+              myMenu[0].strMeal,
+              myMenu[0].strMealThumb,
+              myMenu[0].idMeal,
+              myMenu[0].strCategory,
+              myMenu[0].strArea
+            );
+
+            let myRecipes = JSON.parse(localStorage.getItem(
+              'myRecipes')) || [];
+
+            myRecipes = [...myRecipes, saveRecipe];
+            localStorage.setItem('myRecipes', JSON.stringify(
+              myRecipes));
+
+            myRecipes = JSON.parse(localStorage.getItem(
+              'myRecipes'));
+          })
+        })
 
         videos.forEach((button) => {
           button.addEventListener('click', () => {
@@ -239,8 +279,9 @@ const getRecipe = (letter) => {
             isLoggedIn === "loggedIn" ?
               myMenu.map((item) => {
 
-                const instructions = item.strInstructions.split(
-                  '.');
+                const instructions = item.strInstructions
+                  .split(
+                    '.');
                 modalCard = `
         <div class="modal-inner-container">
           <div class="modal-card-container">

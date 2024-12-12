@@ -540,3 +540,11 @@ aside li {
 .show {
   display: block;
 }
+
+.saved-section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 1.7rem;
+  padding: 0 1rem;
+}
