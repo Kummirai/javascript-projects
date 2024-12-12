@@ -10,3 +10,9 @@ if(logInStatus === 'loggedIn'){
   user.textContent = username;
   isLogged.textContent = "Log out";
 }
+
+isLogged.addEventListener('click', ()=>{
+  if(isLogged.textContent === 'Log out'){
+    window.location.href = 'index.html'
+  }
+})
