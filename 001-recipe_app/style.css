@@ -61,7 +61,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(12, 1fr);
   height: 100vh;
-  background: url('/001-recipe_app/images/jimmy-dean-IanqI4W4fco-unsplash.jpg');
+  background: url('./images/jimmy-dean-IanqI4W4fco-unsplash.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -383,7 +383,7 @@ li {
 }
 
 .image-section {
-  background: url('/001-recipe_app/images/cook.jpg');
+  background: url('./images/cook.jpg');
   background-size: cover;
   background-position: center left;
   width: 100%;
