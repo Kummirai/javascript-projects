@@ -12,9 +12,10 @@
 
 .root {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(auto-fit, 175px);
+  grid-template-rows: auto;
   grid-gap: 1.7rem;
   padding: 0 1rem;
 }
@@ -489,7 +490,6 @@ aside li {
 
 .root {
   width: 80%;
-  height: 100vh;
   overflow-y: auto;
 }
 
@@ -545,7 +545,7 @@ aside li {
 }
 
 .saved-section {
-  height: 100vh;
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(auto-fit, 175px);
   grid-gap: 1.7rem;
