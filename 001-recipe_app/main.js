@@ -70,7 +70,9 @@ const getRecipeByCategory = (category) => {
       data.meals.map((culture) => {
         mealCard += `
         <div class="card-container">
-          <img src=${culture.strMealThumb} alt=${culture.strMeal}>
+          <div class="img-container">
+            <img src=${culture.strMealThumb} alt=${culture.strMeal}>
+          </div>
           <div class="details">
             <h2>${culture.strMeal}</h2>
             <button data-info="${culture.idMeal}" class="recipe">View Recipe</button>
@@ -117,7 +119,9 @@ const getRecipeByCountry = (country) => {
       data.meals.map((culture) => {
         mealCard += `
         <div class="card-container">
+        <div class="img-container">
           <img src=${culture.strMealThumb} alt=${culture.strMeal}>
+          </div>
           <div class="details">
             <h2>${culture.strMeal}</h2>
             <button data-info="${culture.idMeal}" class="recipe">View Recipe</button>
@@ -169,7 +173,9 @@ const getRecipe = (letter) => {
 
         mealCard += `
         <div class="card-container">
-          <img src=${recipe.strMealThumb} alt=${recipe.strMeal}>
+          <div class="img-container">
+            <img src=${recipe.strMealThumb} alt=${recipe.strMeal}>
+          </div>
           <div class="details">
             <h2>${recipe.strMeal}</h2>
             <p class="category">${recipe.strCategory}</p>

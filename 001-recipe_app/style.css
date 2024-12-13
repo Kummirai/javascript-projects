@@ -11,21 +11,21 @@
 }
 
 .root {
-  width: 100vw;
-  height: fit-content;
+  width: fit-content;
+  height: 80vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 175px);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-template-rows: auto;
   grid-gap: 1.7rem;
   padding: 0 1rem;
+  overflow-y: auto;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 0rem 1rem 2rem;
-  position: sticky;
+  padding: 1rem 0rem 1rem 2rem;
 }
 
 nav {
@@ -179,17 +179,28 @@ main .images img {
 }
 
 .card-container {
-  box-shadow: 0 0 10px #F0ECEC;
+  box-shadow: 0 0 10px #FFFCF6;
   height: fit-content;
+  background: #FFFDEA;
+  position: relative;
+  border-radius: 4px;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+
 }
 
 .card-container img {
-  width: 100%;
+  width: 150px;
   height: auto;
-  border-radius: 1%;
+  border-radius: 50%;
   object-fit: cover;
-  box-shadow: 5px 5px 5px #BDB9B9;
-  margin: auto;
 }
 
 body {
@@ -201,7 +212,11 @@ body {
 
 .details {
   width: 100%;
-  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
 }
 
 h2 {
@@ -515,14 +530,17 @@ aside li {
   width: 75%;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 0;
+  right: -4.5rem;
 }
 
 .fas {
   font-size: 1.05rem;
   border: none;
-  background: transparent;
-  color: #979494;
+  color: orange;
   margin: 0.7rem;
 }
 
@@ -538,7 +556,7 @@ aside li {
   position: absolute;
   top: 6rem;
   right: 1rem;
- z-index: 4;
+  z-index: 4;
 }
 
 .account p {
@@ -562,7 +580,7 @@ aside li {
 .saved-section {
   height: fit-content;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 175px);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-gap: 1.7rem;
   padding: 0 1rem;
 }
