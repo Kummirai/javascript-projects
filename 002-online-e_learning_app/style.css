@@ -319,6 +319,7 @@ section .user-image p{
   font-size: 0.7rem;
   color: #828282;
   padding-bottom: 0.5rem;
+  font-weight: 300;
 }
 
 section .other-details {
