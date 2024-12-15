@@ -44,7 +44,7 @@ li{
 }
 
 .fas{
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .settings {
@@ -54,11 +54,26 @@ li{
 .settings li {
   padding: 7px 5px;
 }
-
-article {
-  background: #7C85CA;
-  grid-column: 2 / 8;
+.user{
+  background: #D39A9A;
+  grid-column: 6 / 8;
   grid-row: 1 / 3;
+}
+article {
+  grid-column: 2 / 6;
+  grid-row: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input{
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0.7rem;
+  border-radius: 1.4rem;
+  border: 1px solid #D9D9D9;
+  font-weight: 300;
 }
 
 main {
