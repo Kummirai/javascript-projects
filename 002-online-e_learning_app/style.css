@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background: #ECEDF7;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+aside {
+  grid-column: 1 / 2;
+  grid-row: 1 / 13;
+  background: #fff;
+}
+
+article {
+  background: #7C85CA;
+  grid-column: 2 / 8;
+  grid-row: 1 / 3;
+}
+
+main {
+  background: #64B3AD;
+  grid-column: 2 / 6;
+  grid-row: 3 / 13 ;
+}
+
+section{
+  background: #A385E2;
+  grid-column: 6 / 8;
+  grid-row: 3 / 13 ;
+}
