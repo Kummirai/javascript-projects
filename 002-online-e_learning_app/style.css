@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -89,7 +89,7 @@ li {
   font-size: 0.5rem;
 }
 
-ul p{
+ul p {
   padding: 0 0.5rem;
   font-size: 2rem;
   color: #B1B1B1;
@@ -114,10 +114,10 @@ input {
 
 main {
   grid-column: 2 / 6;
-  grid-row:  2 / 13;
+  grid-row: 2 / 13;
 }
 
-main .banner{
+main .banner {
   background: url('./images/inspired-upbeat-dreamy-fascinated-redhead-girl-writing-down-interesting-lecture-smiling-gazi.jpg');
   background-size: cover;
   background-position: top right;
@@ -125,21 +125,21 @@ main .banner{
   border-radius: 1rem;
 }
 
-.banner p{
+.banner p {
   font-size: 0.85rem;
   font-weight: 400;
   color: #fff;
 }
 
-.banner .subheading{
+.banner .subheading {
   margin: 1rem 0;
 }
 
-.banner .subheading h2{
+.banner .subheading h2 {
   color: #fff;
 }
 
-.banner button{
+.banner button {
   background: #000;
   padding: 0.5rem 1rem;
   border: none;
@@ -149,12 +149,45 @@ main .banner{
   border-radius: 1.5rem;
 }
 
-.banner .fas{
+.banner .fas {
   padding: 0.3rem 0.4rem;
   color: #000;
   background: #fff;
   border-radius: 50%;
   margin-left: 0.3rem
+}
+
+.mini-course-cards {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.mini-course-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.mini-course-card h2 {
+  font-size: 0.9rem;
+}
+
+.mini-course-card p {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #848484;
+}
+
+.mini-course-card .fas {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: darkorange;
 }
 
 section {
