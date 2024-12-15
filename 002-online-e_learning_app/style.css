@@ -21,14 +21,38 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+aside h2{
+  margin: 0 0 4px 0;
 }
 
 .main-aside {
-  background: #A29CAC;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+li{
+  list-style-type: none;
+}
+
+.overview-subsection ul li{
+  padding: 8px 5px;
+}
+
+.fas{
+  margin-right: 5px;
 }
 
 .settings {
-  background: #A29CAC;
+  
+}
+
+.settings li {
+  padding: 7px 5px;
 }
 
 article {
