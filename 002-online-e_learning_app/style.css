@@ -27,7 +27,7 @@ aside {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-radius: 0.8rem;
+  border-radius: 0.8rem
 }
 
 aside h2 {
@@ -271,6 +271,7 @@ main .course-card p {
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top center;
   margin-right: 1rem;
   aspect-ratio: 1 / 1;
 }
@@ -320,12 +321,26 @@ section .user-image p{
   padding-bottom: 0.5rem;
 }
 
-section .statistics{
-  background: #ECEDF7;
-grid-row: 5 / 7;
-}
-
 section .other-details {
   background: #ECEDF7;
-  grid-row: 7 / 11;
+  grid-row: 5 / 11;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-rows: repeat(10, 70px);
+  overflow-y: auto;
+  grid-gap: 0.5rem;
+}
+
+section .other-details .instructor{
+  padding: 0.3rem 0.5rem;
+  background: #fff;
+}
+
+section .other-details .instructor h2{
+  font-size: 0.85rem;
+}
+
+section .other-details .instructor p {
+  font-size: 0.8rem;
+  font-weight: 300;
 }
