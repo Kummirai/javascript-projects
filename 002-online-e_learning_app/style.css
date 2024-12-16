@@ -201,9 +201,7 @@ main .banner {
   color: darkorange;
 }
 
-.courses-list {
-  
-}
+.courses-list {}
 
 .courses-list h2 {
   font-size: 1.2rem;
@@ -216,7 +214,7 @@ main .course-cards {
   overflow-x: auto;
   background: #fff;
   border-radius: 0.5rem;
-  padding: 0.3rem ;
+  padding: 0.3rem;
 }
 
 main .course-card {
@@ -429,25 +427,28 @@ section .other-details .instructor p {
 }
 
 
-.fa-node-js{
+.fa-node-js {
   color: darkgreen;
 }
 
-.fa-react{
+.fa-react {
   color: #0AF0E9;
 }
 
-.main-section .fa-node-js{
-  grid-column: 10 / 11;
-  grid-row: 4 / 5;
+.main-section .fa-node-js {
+  grid-column: 5 / 6 ;
+  grid-row: 10 / 11;
+  color: #000;
 }
 
 .main-section .fa-react {
-  grid-column: 11 / 12 ;
-  grid-row: 2 / 3;
+  grid-column: 11 / 12;
+  grid-row: 3 / 4;
+  color: #000;
 }
 
-.main-section .fa-js {
-  grid-column: 12 / 13;
-  grid-row: 6 / 7;
+
+.main-section .fa-envira {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
