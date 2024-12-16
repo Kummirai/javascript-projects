@@ -20,7 +20,7 @@
    {
      courseId: 2,
      courseName: "Node JS Full Course | Backend Development Course | Part 1 ",
-     courseInstructor: "Sangam Mukherjee",
+     courseInstructor: "SangamMukherjee",
      courseInstructorImg: "/002-online-e_learning_app/images/black-businessman-sad-expression.jpg",
      courseInstructorRole: "Instructor",
      coursecategory: "Nodejs",
@@ -30,7 +30,7 @@
    {
      courseId: 3,
      courseName: "Express JS Full Course",
-     courseInstructor: "Anson the Developer",
+     courseInstructor: "AnsonTheDeveloper",
      courseInstructorImg: "/002-online-e_learning_app/images/AACEB2F0-E209-417D-9A4B-5A6B66C76B65.jpeg",
      courseInstructorRole: "Instructor",
      coursecategory: "Nodejs",
@@ -41,7 +41,7 @@
    {
      courseId: 4,
      courseName: "Javascript Full Course For Beginners | Complete All-in-one Tutorial | 8 hours",
-     courseInstructor: "Dave Gray",
+     courseInstructor: "DaveGray",
      courseInstructorImg: "/002-online-e_learning_app/images/1D8B6891-1314-4881-B394-2ACAED71434C.webp",
      courseInstructorRole: "Instructor",
      coursecategory: "Javascript",
@@ -52,7 +52,7 @@
    {
      courseId: 5,
      courseName: "Reactjs Full Course For Beginners | Complete All-in-one Tutorial | 9 hours",
-     courseInstructor: "Dave Gray",
+     courseInstructor: "DaveGray",
      courseInstructorImg: "/002-online-e_learning_app/images/1D8B6891-1314-4881-B394-2ACAED71434C.webp",
      courseInstructorRole: "Instructor",
      coursecategory: "Reactjs",
@@ -62,7 +62,7 @@
 }
 ]
 
-console.log(courses[0].courseIcon)
+ console.log(courses[0].courseIcon)
 
  courses.map((course) => {
    courseCard += `
@@ -94,7 +94,7 @@ console.log(courses[0].courseIcon)
    const instCoursecount = instCourse.length;
 
    instructorCard += `
-    <div class="instructor">
+    <div class="instructor" data-info=${course.courseInstructor}>
           <img class="instructor-img"
             src=${course.courseInstructorImg}
             alt="instructor">
@@ -109,14 +109,53 @@ console.log(courses[0].courseIcon)
         </div>
   `;
    instructorSection.innerHTML = instructorCard;
- })
+
+   let filteredCourse = [];
+
+   const instructorCourses = document.querySelectorAll('.instructor');
+   instructorCourses.forEach((instructorCourse) => {
+     instructorCourse.addEventListener('click', () => {
+       courseCard = "";
+       const courseTutor = instructorCourse.getAttribute(
+         'data-info');
+       courses.forEach(course => {
+         filteredCourse = courses.filter((course) =>
+           courseTutor === course.courseInstructor);
+       })
+
+       filteredCourse.map(course => {
+         courseCard += `
+          <div class="course-card">
+            <img class="course-img"
+              src=${course.courseImg}
+              alt="course">
+            <h2>${course.coursecategory}</h2>
+            <p class="course-name">${course.courseName}</p>
+            <div class="instructor">
+              <img class="instructor-img"
+                src=${course.courseInstructorImg}
+                alt="instructor">
+              <div class="details">
+                <p class="name">${course.courseInstructor}</p>
+                <p class="role">Instructor</p>
+              </div>
+            </div>
+          </div>
+  `;
+         coursesCards.innerHTML = courseCard;
+
+       })
+     })
+   })
+ });
 
 
 
  courses.map((course) => {
-   const courseCatergories = courses.filter((cCourse)=> cCourse.coursecategory ===  course.coursecategory)
+   const courseCatergories = courses.filter((cCourse) => cCourse
+     .coursecategory === course.coursecategory)
    const courseCategoryCount = courseCatergories.length;
-   
+
    miniCourseCard += `
     <div class="mini-course-card">
           <i class="${course.courseIcon}"></i>
