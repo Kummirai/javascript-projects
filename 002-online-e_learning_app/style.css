@@ -368,7 +368,7 @@ section .other-details .instructor p {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(12, 1fr);
   grid-gap: 0.8rem;
-  background: url('/002-online-e_learning_app/images/portrait-creative-emotive-stylish-dark-skinned-woman-with-afro-hairstyle-turning-left-gazing-far-away-with-hand-forehead-posing-with-backpack.jpg');
+  background: url('/002-online-e_learning_app/images/stylish-good-looking-female-tourist-with-dark-skin-afro-hairstyle-checking-glasses-eyes-turning-while-standing-profile-gray-wall.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -391,7 +391,7 @@ section .other-details .instructor p {
 
 .main-section .intro {
   grid-column: 2 / 13;
-  grid-row: 4 / 9;
+  grid-row: 5 / 10;
   padding: 0.5rem;
 }
 
@@ -443,7 +443,7 @@ section .other-details .instructor p {
 
 .main-section .fa-react {
   grid-column: 11 / 12;
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
   color: #000;
 }
 
