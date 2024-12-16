@@ -212,7 +212,6 @@ main .course-cards {
   display: grid;
   grid-template-columns: repeat(7, 280px);
   overflow-x: auto;
-  padding: 0.3rem;
   grid-gap: 0.3rem;
 }
 
