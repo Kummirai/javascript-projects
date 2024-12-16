@@ -212,7 +212,7 @@ main .banner {
 
 main .course-cards {
   display: grid;
-  grid-template-columns: repeat(7, 230px);
+  grid-template-columns: repeat(7, 280px);
   overflow-x: auto;
   background: #fff;
   border-radius: 0.5rem;
