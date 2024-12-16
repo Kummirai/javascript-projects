@@ -432,3 +432,12 @@ section .other-details .instructor p {
   grid-column: 5 / 6;
   grid-row: 1 / 13;
 }
+
+
+.fa-node-js{
+  color: darkgreen;
+}
+
+.fa-react{
+  color: #0AF0E9;
+}
