@@ -391,7 +391,7 @@ section .other-details .instructor p {
 
 .main-section .intro {
   grid-column: 2 / 13;
-  grid-row: 5 / 10;
+  grid-row: 4 / 9;
   padding: 0.5rem;
 }
 
