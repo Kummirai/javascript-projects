@@ -212,13 +212,14 @@ main .course-cards {
   display: grid;
   grid-template-columns: repeat(7, 280px);
   overflow-x: auto;
-  background: #fff;
-  border-radius: 0.5rem;
   padding: 0.3rem;
+  grid-gap: 0.3rem;
 }
 
 main .course-card {
   padding: 0.3rem;
+  background: #fff;
+  border-radius: 0.5rem;
 }
 
 main .course-card h2 {
@@ -436,7 +437,7 @@ section .other-details .instructor p {
 }
 
 .main-section .fa-node-js {
-  grid-column: 5 / 6 ;
+  grid-column: 5 / 6;
   grid-row: 10 / 11;
   color: #000;
 }
