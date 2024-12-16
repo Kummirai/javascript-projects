@@ -10,7 +10,7 @@ body {
 
 .container {
   height: 100vh;
-  background: #ECEDF7;
+  background: #ECECEC;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -208,7 +208,7 @@ main .banner {
 
 main .course-cards {
   display: grid;
-  grid-template-columns: repeat(7, 185px);
+  grid-template-columns: repeat(7, 230px);
   overflow-x: auto;
   background: #fff;
   border-radius: 0.5rem;
@@ -234,6 +234,12 @@ main .course-card p {
   font-size: 0.85rem;
   font-weight: 700;
   margin: 0.5rem 0;
+  
+}
+
+main .course-card .course-name{
+  line-height: 15px;
+  height: 60px;
 }
 
 .course-img {
@@ -328,7 +334,7 @@ section .user-image p {
 }
 
 section .other-details {
-  background: #ECEDF7;
+  background: #ECECEC;
   grid-row: 5 / 11;
   padding: 0.5rem;
   display: grid;
@@ -411,6 +417,11 @@ section .other-details .instructor p {
   color: #fff;
   border-radius: 1.4rem;
   margin: 1rem 0 0 0;
+}
+
+.main-section .intro a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .image-section {
