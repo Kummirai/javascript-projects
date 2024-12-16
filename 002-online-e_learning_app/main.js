@@ -47,7 +47,7 @@
      coursecategory: "Javascript",
      courseUrl: "https://www.youtube.com/watch?v=EfAl9bwzVZk",
      courseImg: "/002-online-e_learning_app/images/software-developer-writing-algorithm-front-computer-with-green-screen-chroma-key-mockup-ai-development-agency-cyber-security-app-developer-programming-machine-learning-software.jpg",
-     courseIcon: "fas fa-server"
+     courseIcon: "fas fa-code"
   },
    {
      courseId: 5,
