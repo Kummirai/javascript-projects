@@ -15,7 +15,7 @@
      coursecategory: "Javascript",
      courseUrl: "https://www.youtube.com/watch?v=EerdGm-ehJQ",
      courseImg: "./images/software-developer-writing-algorithm-front-computer-with-green-screen-chroma-key-mockup-ai-development-agency-cyber-security-app-developer-programming-machine-learning-software.jpg",
-     courseIcon: "fas fa-code"
+     courseIcon:"fab fa-js fa-2x"
   },
    {
      courseId: 2,
@@ -26,6 +26,7 @@
      coursecategory: "Nodejs",
      courseUrl: "https://www.youtube.com/watch?v=MIJt9H69QVc",
      courseImg: "/002-online-e_learning_app/images/software-developer-writing-algorithm-front-computer-with-green-screen-chroma-key-mockup-ai-development-agency-cyber-security-app-developer-programming-machine-learning-software.jpg",
+     courseIcon: "fab fa-node-js fa-2x"
   },
    {
      courseId: 3,
@@ -36,7 +37,7 @@
      coursecategory: "Nodejs",
      courseUrl: "https://m.youtube.com/watch?v=nH9E25nkk3I",
      courseImg: "/002-online-e_learning_app/images/software-developer-writing-algorithm-front-computer-with-green-screen-chroma-key-mockup-ai-development-agency-cyber-security-app-developer-programming-machine-learning-software.jpg",
-     courseIcon: "fas fa-laptop-code"
+     courseIcon: "fab fa-node-js fa-2x"
   },
    {
      courseId: 4,
@@ -47,7 +48,7 @@
      coursecategory: "Javascript",
      courseUrl: "https://www.youtube.com/watch?v=EfAl9bwzVZk",
      courseImg: "/002-online-e_learning_app/images/software-developer-writing-algorithm-front-computer-with-green-screen-chroma-key-mockup-ai-development-agency-cyber-security-app-developer-programming-machine-learning-software.jpg",
-     courseIcon: "fas fa-code"
+     courseIcon: "fab fa-js fa-2x"
   },
    {
      courseId: 5,
@@ -58,7 +59,7 @@
      coursecategory: "Reactjs",
      courseUrl: "https://www.youtube.com/watch?v=EfAl9bwzVZk",
      courseImg: "/002-online-e_learning_app/images/software-developer-writing-algorithm-front-computer-with-green-screen-chroma-key-mockup-ai-development-agency-cyber-security-app-developer-programming-machine-learning-software.jpg",
-     courseIcon: "fas fa-code"
+     courseIcon: "fab fa-react fa-2x"
 }
 ]
 
