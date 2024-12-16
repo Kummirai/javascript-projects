@@ -1,7 +1,10 @@
  const instructorSection = document.querySelector('.other-details');
  const coursesCards = document.querySelector('.course-cards');
+ const miniCards = document.querySelector('.mini-course-cards');
+ let miniCourseCard = "";
  let courseCard = "";
- 
+ let instructorCard = "";
+
  const courses = [
    {
      courseId: 1,
@@ -12,6 +15,7 @@
      coursecategory: "Javascript",
      courseUrl: "https://www.youtube.com/watch?v=EerdGm-ehJQ",
      courseImg: "./images/software-developer-writing-algorithm-front-computer-with-green-screen-chroma-key-mockup-ai-development-agency-cyber-security-app-developer-programming-machine-learning-software.jpg",
+     courseIcon: "fas fa-code"
   },
    {
      courseId: 2,
@@ -32,6 +36,7 @@
      coursecategory: "Nodejs",
      courseUrl: "https://m.youtube.com/watch?v=nH9E25nkk3I",
      courseImg: "/002-online-e_learning_app/images/software-developer-writing-algorithm-front-computer-with-green-screen-chroma-key-mockup-ai-development-agency-cyber-security-app-developer-programming-machine-learning-software.jpg",
+     courseIcon: "fas fa-laptop-code"
   },
    {
      courseId: 4,
@@ -42,11 +47,25 @@
      coursecategory: "Javascript",
      courseUrl: "https://www.youtube.com/watch?v=EfAl9bwzVZk",
      courseImg: "/002-online-e_learning_app/images/software-developer-writing-algorithm-front-computer-with-green-screen-chroma-key-mockup-ai-development-agency-cyber-security-app-developer-programming-machine-learning-software.jpg",
-  }
+     courseIcon: "fas fa-server"
+  },
+   {
+     courseId: 5,
+     courseName: "Javascript Full Course For Beginners | Complete All-in-one Tutorial | 8 hours",
+     courseInstructor: "Dave Gray",
+     courseInstructorImg: "/002-online-e_learning_app/images/AACEB2F0-E209-417D-9A4B-5A6B66C76B65.jpeg",
+     courseInstructorRole: "Instructor",
+     coursecategory: "Javascript",
+     courseUrl: "https://www.youtube.com/watch?v=EfAl9bwzVZk",
+     courseImg: "/002-online-e_learning_app/images/software-developer-writing-algorithm-front-computer-with-green-screen-chroma-key-mockup-ai-development-agency-cyber-security-app-developer-programming-machine-learning-software.jpg",
+     courseIcon: "fas fa-code"
+}
 ]
 
-courses.map((course) => {
-  courseCard += `
+console.log(courses[0].courseIcon)
+
+ courses.map((course) => {
+   courseCard += `
     <div class="course-card">
             <img class="course-img"
               src=${course.courseImg}
@@ -64,6 +83,48 @@ courses.map((course) => {
             </div>
           </div>
   `;
-  coursesCards.innerHTML = courseCard;
-})
- 
+   coursesCards.innerHTML = courseCard;
+ })
+
+
+ courses.map((course) => {
+
+   const instCourse = courses.filter(aCourse => aCourse.courseInstructor ===
+     course.courseInstructor);
+   const instCoursecount = instCourse.length;
+
+   instructorCard += `
+    <div class="instructor">
+          <img class="instructor-img"
+            src=${course.courseInstructorImg}
+            alt="instructor">
+          <div class="details">
+            <p class="name">${course.courseInstructor}</p>
+            <p class="role">${course.courseInstructorRole}</p>
+          </div>
+          <div class="number-of-courses">
+            <h2>${instCoursecount}</h2>
+            <p>Courses</p>
+          </div>
+        </div>
+  `;
+   instructorSection.innerHTML = instructorCard;
+ })
+
+
+
+ courses.map((course) => {
+   const courseCatergories = courses.filter((cCourse)=> cCourse.coursecategory ===  course.coursecategory)
+   const courseCategoryCount = courseCatergories.length;
+   
+   miniCourseCard += `
+    <div class="mini-course-card">
+          <i class="${course.courseIcon}"></i>
+          <div class="details">
+            <p>${courseCategoryCount} courses</p>
+            <h2>${course.coursecategory}</h2>
+          </div>
+        </div>
+   `;
+   miniCards.innerHTML = miniCourseCard;
+ })
