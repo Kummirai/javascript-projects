@@ -368,7 +368,7 @@ section .other-details .instructor p {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(12, 1fr);
   grid-gap: 0.8rem;
-  background: url('/002-online-e_learning_app/images/stylish-good-looking-female-tourist-with-dark-skin-afro-hairstyle-checking-glasses-eyes-turning-while-standing-profile-gray-wall.jpg');
+  background: url('./images/stylish-good-looking-female-tourist-with-dark-skin-afro-hairstyle-checking-glasses-eyes-turning-while-standing-profile-gray-wall.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right bottom;
