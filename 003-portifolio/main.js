@@ -46,15 +46,15 @@ let projectCard = "";
 
 
 projects.map((project) => {
-  
+
   let technologies = "";
-  
-  project.category.map(tech =>{
+
+  project.category.map(tech => {
     technologies += `
       <p class="project-name">${tech}</p>
     `;
   })
-  
+
   projectCard += `
           <div class="project-card" data-info=${project.data}>
             <img class="project-img"
@@ -72,7 +72,7 @@ projects.map((project) => {
     project.addEventListener('click', () => {
       const myProject = project.getAttribute('data-info');
       console.log(myProject)
-      if(myProject === "RecipeWepApp"){
+      if (myProject === "RecipeWepApp") {
         window.location.href = "https://yorecipes.netlify.app"
       } else if (myProject === "OnlineSchoolApp") {
         window.location.href = "https://devskool.netlify.app"
