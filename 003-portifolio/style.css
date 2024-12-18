@@ -336,24 +336,18 @@ nav a {
   font-weight: 700; 
 }
 
+/*Education section styles*/
 
-
-#bar2{
-  width: 95%;
+.education-experience{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-#bar3{
-  width: 85%;
-}
-
-#bar4{
-  width: 80%;
-}
-
-#bar5{
-  width: 95%;
-}
-
-#bar6{
-  width: 90%;
+.education{
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
