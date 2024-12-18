@@ -164,17 +164,17 @@ nav a {
 }
 
 .background-one {
-  background-color: #ff00ff01;
+  background-color: #FeFdFE;
   position: absolute;
   top: 0;
   left: 0;
-  width: 70%;
+  width: 69%;
   height: 100%;
   z-index: -1;
 }
 
 .background-two {
-  background-color: #00ffff09;
+  background-color: #00ffff10;
   position: absolute;
   top: 0;
   right: 0;
@@ -280,3 +280,82 @@ nav a {
   padding: 1rem 0 0 0;
 }
 
+/*Qualificatios section*/
+.qualifications{
+  height: 100vh;
+  background-color: #FeFbFE;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.qualifications .about-description{
+  grid-column:  1 / 2;
+}
+
+/*bars section*/
+.qualifications .bars{
+  grid-column: 2 / 3;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-bar{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.first-bar>p{
+  font-size: 0.85rem;
+}
+.container-bar {
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+}
+
+.bar-percent{
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  height: 0.5rem;
+  background-color: #006EFF;
+  width: 0%; /* Initial width is 0% */
+  transition: width 0.5s ease-in-out; 
+}
+
+.percent p{
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  color: #006eff;
+  font-weight: 700; 
+}
+
+#bar1{
+  width: 98%;
+}
+
+#bar2{
+  width: 95%;
+}
+
+#bar3{
+  width: 85%;
+}
+
+#bar4{
+  width: 80%;
+}
+
+#bar5{
+  width: 95%;
+}
+
+#bar6{
+  width: 90%;
+}

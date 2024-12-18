@@ -1,0 +1,1 @@
+document.getElementById("bar1").style.width = "0%";
