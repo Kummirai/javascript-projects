@@ -56,18 +56,19 @@ projects.map((project) => {
   })
 
   projectCard += `
-          <div class="project-card" data-info=${project.data}>
+          <div class="project-card">
             <img class="project-img"
               src=${project.image}
               alt="course">
             <h2>${project.name}</h2>
             <div class="technologies">${technologies}</div>
+            <button class="project-link" data-info=${project.data}>View Demo</button>
           </div>
   `;
 
   projectsContainer.innerHTML = projectCard;
 
-  const myProjects = document.querySelectorAll('.project-card');
+  const myProjects = document.querySelectorAll('.project-link');
   myProjects.forEach(project => {
     project.addEventListener('click', () => {
       const myProject = project.getAttribute('data-info');

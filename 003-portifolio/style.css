@@ -497,7 +497,17 @@ nav a {
   transform: translate(10px, -10px);
 }
 
-.technologies{
+.project-card .project-link {
+  background: #0080FF;
+  color: #FFF;
+  padding: 0.4rem 1rem;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 1rem;
+  margin: 1rem 0 0 0;
+}
+
+.technologies {
   display: flex;
   align-items: center;
   margin: 0.5rem 0 0 0;
