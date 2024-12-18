@@ -560,10 +560,12 @@ footer {
 footer h3 {
   color: #fff;
   font-size: 1rem;
+  font-weight: 300;
 }
 
 footer h2 {
   color: #999999;
+  font-weight: 500;
 }
 
 .copyright p {
