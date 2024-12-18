@@ -5,7 +5,7 @@ const projects = [
     data: "RecipeWepApp",
     image: "./images/yoRecipes.png",
     url: "https//yorecipe.netlify.app",
-    category: "Javascript"
+    category: ["Javascript", "HTML", "CSS", "APIs"]
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const projects = [
     data: "OnlineSchoolApp",
     image: "./images/httpsdevskool.netlify.app.png",
     url: "https//devskool.netlify.app",
-    category: "Javascript"
+    category: ["Javascript", "CSS", "HTML"]
   }
 ]
 
@@ -43,14 +43,25 @@ document.querySelector(".percent6").innerHTML = bootstrap;
 const projectsContainer = document.querySelector('.projects');
 let projectCard = "";
 
+
+
 projects.map((project) => {
+  
+  let technologies = "";
+  
+  project.category.map(tech =>{
+    technologies += `
+      <p class="project-name">${tech}</p>
+    `;
+  })
+  
   projectCard += `
           <div class="project-card" data-info=${project.data}>
             <img class="project-img"
               src=${project.image}
               alt="course">
             <h2>${project.name}</h2>
-            <p class="project-name">${project.category}</p>
+            <div class="technologies">${technologies}</div>
           </div>
   `;
 
