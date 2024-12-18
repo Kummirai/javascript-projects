@@ -69,11 +69,12 @@ nav a {
   margin-right: 0.5rem;
 }
 
-.envelope a{
+.envelope a {
   text-decoration: none;
   color: #009FFF;
   padding: 0.3rem 0.3rem 0.3rem 0;
 }
+
 .image-section {
   grid-column: 6 / 13;
   grid-row: 4 / 13;
@@ -208,9 +209,12 @@ nav a {
 
 .about-image img {
   width: 300px;
-  height: 400px;
-  object-fit: fit;
+  height: 300px;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+
 }
 
 .about-description {
@@ -252,12 +256,13 @@ nav a {
 .about-description .about-heading {
   padding: 0.5rem;
   color: #0080FF;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 
 .about-description .about-description-p {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1.2rem;
+font-weight: 200;
   margin: 1rem 0;
   text-align: justify;
   width: 90%;
