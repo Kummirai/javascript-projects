@@ -3,7 +3,7 @@ const CSS = "95%";
 const javascript = "85%";
 const react = "80%";
 const git = "95%"; 
-const bootstrap = "90%"; 
+const bootstrap = "80%"; 
 
 document.getElementById("bar1").style.width = HTML;
 document.getElementById("bar2").style.width = CSS;
