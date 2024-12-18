@@ -164,7 +164,7 @@ nav a {
 }
 
 .background-one {
-  background-color: #FeFdFE;
+  background-color: #FEFEFE;
   position: absolute;
   top: 0;
   left: 0;
@@ -283,7 +283,7 @@ nav a {
 /*Qualificatios section*/
 .qualifications{
   height: 100vh;
-  background-color: #FeFbFE;
+  background-color: #F8F9FD;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -324,7 +324,7 @@ nav a {
 
 .bar {
   height: 0.5rem;
-  background-color: #006EFF;
+  background-color: #0080ff;
   width: 0%; /* Initial width is 0% */
   transition: width 0.5s ease-in-out; 
 }
@@ -332,13 +332,11 @@ nav a {
 .percent p{
   font-size: 0.75rem;
   margin-left: 0.5rem;
-  color: #006eff;
+  color: #0080ff;
   font-weight: 700; 
 }
 
-#bar1{
-  width: 98%;
-}
+
 
 #bar2{
   width: 95%;
