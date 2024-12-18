@@ -37,7 +37,7 @@ header .surname {
 }
 
 nav {
-  grid-column: 7 / 12;
+  grid-column: 5 / 9;
   grid-row: 1 / 2;
   display: flex;
   align-items: flex-start;
@@ -52,6 +52,21 @@ nav a {
   text-decoration: none;
   color: #808080;
   font-size: 0.9rem;
+}
+
+.envelope {
+  grid-column: 10 / 13;
+  grid-row: 1 / 2;
+  font-size: 0.85rem;
+  color: #626262;
+}
+
+.fa-envelope {
+  color: #009FFF;
+}
+
+.envelope i {
+  margin-right: 0.5rem;
 }
 
 .image-section {
@@ -194,6 +209,74 @@ nav a {
 }
 
 .about-description {
+  height: 100%;
   grid-column: 2 / 3;
   grid-row: 1 / 13;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
+
+.about-description .heading-description{
+  color: #797979;
+}
+
+.about-description .btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+  background: #0080FF;
+  color: #fff;
+}
+
+.about-description .name-subsection{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 0 0.5rem 0;
+}
+
+.about-description .name-subsection p{
+  font-size: 0.9rem;
+  color: #797979;
+}
+
+.about-description .about-heading{
+  padding: 0.5rem;
+  color: #0080FF;
+  font-size: 0.8rem;
+}
+.about-description .about-description-p{
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  margin: 1rem 0;
+  text-align: justify;
+  width: 90%;
+  color: #797979;
+}
+
+.about-description .details{
+  margin: 1.8rem 0;
+}
+
+.buttons .btn{
+  width: fit-content;
+}
+
+.social-icons{
+  display: flex;
+  align-items: center;
+}
+
+.social-icons i{
+  margin-right: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.buttons {
+  padding: 1rem 0 0 0;
+}
+
