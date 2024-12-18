@@ -342,6 +342,7 @@ nav a {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 1.4rem;
 }
 
 .education{
@@ -349,5 +350,50 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+.qlfn{
+  align-self: flex-start;
+  color: #0080ff;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.qualif-headings{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.qualif-headings h2{
+  padding:  0.5rem 0 0 0;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.education-template{
+  margin:  0 0 1.5rem 3rem;
+  padding: 0 0 0 1rem;
+  border-left: 1px solid #8A8A8A;
+  list-style-type: none;
+}
+
+.education-template h3{
+  font-size: 0.9rem;
+  padding: 0 0 0.5rem 0;
+  color: #2F2F2F;
+  font-weight: 600;
+}
+
+.education-template p{
+  margin: 0 0 0.5rem 0;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.education-template button{
+  padding: 0.3rem 0.5rem;
+  background: #EAF8FF;
+  border-radius: 0.8rem;
 }
