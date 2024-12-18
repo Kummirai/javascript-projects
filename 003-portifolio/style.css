@@ -336,7 +336,8 @@ font-weight: 200;
 }
 
 .first-bar>p {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 300;
 }
 
 .container-bar {
