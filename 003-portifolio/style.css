@@ -69,6 +69,11 @@ nav a {
   margin-right: 0.5rem;
 }
 
+.envelope a{
+  text-decoration: none;
+  color: #009FFF;
+  padding: 0.3rem 0.3rem 0.3rem 0;
+}
 .image-section {
   grid-column: 6 / 13;
   grid-row: 4 / 13;
