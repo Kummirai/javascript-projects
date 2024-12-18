@@ -214,6 +214,8 @@ nav a {
   object-fit: cover;
   object-position: center top;
   border-radius: 50%;
+  padding: 0rem;
+  border: 3px solid #7C7C7C;
 
 }
 
