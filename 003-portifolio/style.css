@@ -412,3 +412,42 @@ nav a {
   background: #EAF8FF;
   border-radius: 0.8rem;
 }
+
+/*portiolio*/
+
+.portifolio{
+  height: 100vh;
+  padding: 1.4rem;
+  width: ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portifolio h3{
+  color: #0080ff;
+}
+
+.portifolio ul{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.portifolio li{
+  list-style-type: none;
+  color: #2F2F2F;
+}
+
+
+.portifolio h2{
+  padding: 1.5rem;
+  color: #4F4F4F;
+}
+
+.portifolio .projects{
+  width: 100%;
+  height: 100%;
+  margin: 1.4rem 0 0 0;
+}
