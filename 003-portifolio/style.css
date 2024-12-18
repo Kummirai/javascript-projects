@@ -26,14 +26,17 @@ header {
 
 header h1 {
   font-size: 1.1rem;
+  font-weight: 500;
 }
 
 header .name {
   color: #39A1DF;
+  font-weight: 300;
 }
 
 header .surname {
   color: #464646;
+  font-weight: 600;
 }
 
 nav {
@@ -93,6 +96,11 @@ nav a {
 .main-section h2 {
   margin-bottom: 0.5rem;
   color: #646464;
+  
+}
+
+.main-section .dev-greeting{
+  font-weight: 200;
 }
 
 .main-section p {
@@ -121,11 +129,13 @@ nav a {
 
 .main-section .dev-name {
   font-size: 1.7rem;
+  font-weight: 400;
 }
 
 .main-section .role {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   color: #39A1DF;
+  font-weight: 600;
 }
 
 .fab {
@@ -232,6 +242,7 @@ nav a {
 
 .about-description .heading-description {
   color: #797979;
+  font-weight: 500;
 }
 
 .about-description .btn {
@@ -259,6 +270,7 @@ nav a {
   padding: 0.5rem;
   color: #0080FF;
   font-size: 1.1rem;
+  font-weight: 400;
 }
 
 .about-description .about-description-p {
@@ -443,7 +455,8 @@ font-weight: 200;
 
 .portifolio h3 {
   color: #0080ff;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .portifolio ul {
@@ -461,7 +474,7 @@ font-weight: 200;
 
 .portifolio h2 {
   padding: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #4F4F4F;
 }
 
