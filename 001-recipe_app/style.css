@@ -191,6 +191,7 @@ main .images img {
 
 .card-container {
   box-shadow: 0 0 10px #FFFCF6;
+  width: 240px;
   height: fit-content;
   background: var(--white);
   padding: 0.8rem;
