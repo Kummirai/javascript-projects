@@ -47,6 +47,10 @@ nav {
   justify-content: space-between;
 }
 
+.fa-bars {
+  display: none;
+}
+
 nav li {
   list-style-type: none;
 }
@@ -610,7 +614,7 @@ footer .contact {
     grid-template-rows: repeat(12, 1fr);
     grid-template-columns: repeat(12, 1fr);
     position: relative;
-    padding: 1.4rem 0 0 2.5rem;
+    padding: 2.5rem 0 0 2.5rem;
   }
 
   header {
@@ -634,21 +638,36 @@ footer .contact {
   }
 
   nav {
+    margin-top: 1rem;
     grid-column: 1 / 5;
-    grid-row: 2 / 3;
+    grid-row: 2 / 4;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
   }
 
+  .fa-bars {
+    margin-top: -1.4rem;
+    display: block;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: fit-content;
+    height: fit-content;
+  }
+
   nav li {
     list-style-type: none;
+    padding: 0.5rem;
   }
 
   nav a {
     text-decoration: none;
     color: #808080;
     font-size: 0.9rem;
+    
   }
 
   .envelope {
@@ -1027,103 +1046,110 @@ footer .contact {
     background: #EAF8FF;
     border-radius: 0.8rem;
   }
-  
+
   /*portiolio*/
 
-.portifolio {
-  height: 70vh;
-  padding: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center
-}
+  .portifolio {
+    height: 70vh;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+  }
 
-.portifolio h3 {
-  color: #0080ff;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
+  .portifolio h3 {
+    color: #0080ff;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
 
-.portifolio ul {
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  .portifolio ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-.portifolio li {
-  list-style-type: none;
-  color: #2F2F2F;
-}
+  .portifolio li {
+    list-style-type: none;
+    color: #2F2F2F;
+  }
 
 
-.portifolio h2 {
-  padding: 1.5rem;
-  font-size: 1.4rem;
-  color: #4F4F4F;
-}
+  .portifolio h2 {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    color: #4F4F4F;
+  }
 
-.portifolio .projects {
-  width: 100%;
-  height: 100%;
-  margin: 1.4rem 0 0 0;
-  display: grid;
-  grid-template-columns: repeat(7, 450px);
-  grid-template-rows: repeat(3, 300px);
-  overflow-x: auto;
-  grid-gap: 1rem;
-  padding: 1.4rem;
-}
+  .portifolio .projects {
+    width: 100%;
+    height: 100%;
+    margin: 1.4rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(7, 450px);
+    grid-template-rows: repeat(3, 300px);
+    overflow-x: auto;
+    grid-gap: 1rem;
+    padding: 1.4rem;
+  }
 
-.project-card {
-  box-shadow: 0 0 0.7rem #9FCBFF;
+  .project-card {
+    box-shadow: 0 0 0.7rem #9FCBFF;
 
-}
+  }
 
-.project-card h2 {
-  margin: 0 0 0 0;
-  padding: 0.5rem 0 0.1rem 0;
-  font-size: 0.9rem;
-  color: #0080ff;
-  font-weight: 500;
-}
+  .project-card h2 {
+    margin: 0 0 0 0;
+    padding: 0.5rem 0 0.1rem 0;
+    font-size: 0.9rem;
+    color: #0080ff;
+    font-weight: 500;
+  }
 
-.project-card p {
-  font-size: 0.75rem;
-  padding: 0.3rem 0.8rem;
-  background: #EAF8FF;
-  width: fit-content;
-  border-radius: 0.8rem;
-  margin: 0 0.5rem 0 0;
-}
+  .project-card p {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    background: #EAF8FF;
+    width: fit-content;
+    border-radius: 0.8rem;
+    margin: 0 0.5rem 0 0;
+  }
 
-.project-card img {
-  width: 100%;
-  transition: transform 0.3s ease-in-out;
-}
+  .project-card img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
 
-.project-card:hover img {
-  /*transform: scale(1.1);*/
-  transform: rotate(45deg);
-  transform: translate(10px, -10px);
-}
+  .project-card:hover img {
+    /*transform: scale(1.1);*/
+    transform: rotate(45deg);
+    transform: translate(10px, -10px);
+  }
 
-.project-card .project-link {
-  background: #0080FF;
-  color: #FFF;
-  padding: 0.4rem 1rem;
-  font-size: 0.75rem;
-  border: none;
-  border-radius: 1rem;
-  margin: 1rem 0 0 0;
-}
+  .project-card .project-link {
+    background: #0080FF;
+    color: #FFF;
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 1rem;
+    margin: 1rem 0 0 0;
+  }
 
-.technologies {
-  display: flex;
-  align-items: center;
-  margin: 0.5rem 0 0 0;
-}
+  .technologies {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0 0 0;
+  }
 
+  .display-none {
+    display: none;
+  }
+
+  .display-block {
+    display: block;
+  }
 
 }

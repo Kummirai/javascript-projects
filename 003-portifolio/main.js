@@ -80,3 +80,16 @@ projects.map((project) => {
     })
   })
 })
+
+const hamburgerMenu = document.querySelector('.fa-bars');
+const nav = document.querySelector('nav');
+
+hamburgerMenu.addEventListener('click', ()=>{
+  if(nav.classList.contains('display-none')){
+    nav.classList.remove('display-none');
+    nav.classList.add('display-block');
+  } else if(nav.classList.contains('display-block')){
+    nav.classList.remove('display-block');
+    nav.classList.add('display-none')
+  }
+})
