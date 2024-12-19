@@ -457,6 +457,7 @@ nav a {
 /*portiolio*/
 
 .portifolio {
+  background: #f5f5f550;
   height: 100vh;
   padding: 1.4rem;
   display: flex;
