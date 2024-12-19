@@ -75,8 +75,8 @@ const getRecipeByCategory = (category) => {
           </div>
           <div class="details">
             <h2>${culture.strMeal}</h2>
-            <button data-info="${culture.idMeal}" class="recipe">View Recipe</button>
-            <button data-info="${culture.idMeal}" class="recipe save">Save Recipe</button>
+            <!--<button data-info="${culture.idMeal}" class="recipe">View Recipe</button>
+            <button data-info="${culture.idMeal}" class="recipe save">Save Recipe</button>-->
           </div>
         </div>`;
         container.innerHTML = mealCard;
@@ -124,8 +124,8 @@ const getRecipeByCountry = (country) => {
           </div>
           <div class="details">
             <h2>${culture.strMeal}</h2>
-            <button data-info="${culture.idMeal}" class="recipe">View Recipe</button>
-            <button data-info="${culture.idMeal}" class="recipe save">Save Recipe</button>
+            <!--<button data-info="${culture.idMeal}" class="recipe">View Recipe</button>
+            <button data-info="${culture.idMeal}" class="recipe save">Save Recipe</button>-->
           </div>
         </div>`;
         container.innerHTML = mealCard;

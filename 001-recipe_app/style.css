@@ -11,7 +11,7 @@
   --white: #fff;
   --grey: #9B9B9B;
   --green-grey: #A4B5A7;
-  --white-f8: #f8f8f8;
+  --white-f8: #f9f8f8;
   --white-f5: #f5f5f5;
   --black: #000;
 }
@@ -26,9 +26,9 @@
   width: fit-content;
   height: 80vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-template-rows: auto;
-  grid-gap: 1.7rem;
+  grid-gap: 1rem;
   padding: 0 1rem;
   overflow-y: auto;
   
@@ -60,7 +60,7 @@ nav a {
 }
 
 .nav-link.active {
-  border-bottom: 1px solid darkorange;
+  border-bottom: 1px solid var(--green);
 }
 
 .home-container img {
@@ -394,13 +394,13 @@ li {
 
 /*.select:hover {
   background: transparent;
-  border: 1px solid darkorange;
+  border: 1px solid var(--green);
   color: #535353;
 }*/
 
 .selected {
   background: transparent;
-  border: 1px solid darkorange;
+  border: 1px solid var(--green);
   color: #535353;
 }
 
@@ -482,7 +482,7 @@ li {
 
 .welcome-back h2 {
   font-size: 2.4rem;
-  color: darkorange;
+  color: var(--green);
   font-weight: 400;
 }
 
@@ -513,6 +513,7 @@ aside {
 
 aside h2 {
   padding: 0.5rem 0;
+  font-size: 0.9rem;
 }
 
 aside ul {
@@ -536,7 +537,7 @@ aside li {
 }
 
 .listStyle {
-  color: darkorange;
+  color: var(--green);
   font-weight: 700;
 }
 
@@ -577,9 +578,9 @@ aside li {
   padding: 0.3rem 0.5rem;
   margin: 0 0 0.7rem 0;
   background: white;
-  border: 1px solid darkorange;
+  border: 1px solid var(--green);
   border-radius: 15px;
-  box-shadow: 0 0 1px darkorange;
+  box-shadow: 0 0 1px var(--green);
   text-align: center;
   color: #535353;
   z-index: 4;

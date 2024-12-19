@@ -30,3 +30,8 @@ ul li {
 p{
   color: #535353;
 }
+
+h2{
+  font-size: 0.9rem;
+  color: var(--green);
+}
