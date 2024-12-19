@@ -12,12 +12,16 @@ body {
 
 
 :root{
-  --black: #222B37;
+  --blackOne: #222B37;
+  --blackTwo: #323C4B;
   --grey: #4F5B6D;
   --blue: #0088fe;
   --light-blue: #3EA4FC ;
   --dark-grey: #323C4B;
   --greyish: #F7F8FD;
+  --backgroundOne: #FFFEFF;
+  --backgroundThree: #F7F8FD;
+  --light-grey: #4F5B6D;
 }
 
 .home-container {
@@ -40,12 +44,12 @@ header h1 {
 }
 
 header .name {
-  color: #39A1DF;
+  color: var(--light-blue);
   font-weight: 300;
 }
 
 header .surname {
-  color: #464646;
+  color: var(--blackOne);
   font-weight: 600;
 }
 
@@ -201,7 +205,7 @@ nav a {
 }
 
 .background-one {
-  background-color: #FEFEFE;
+  background-color: var(--ba);
   position: absolute;
   top: 0;
   left: 0;
@@ -638,12 +642,12 @@ footer .contact {
   }
 
   header .name {
-    color: #39A1DF;
+    color: var(--light-blue);
     font-weight: 300;
   }
 
   header .surname {
-    color: #464646;
+    color: var(--blackOne);
     font-weight: 600;
   }
 
@@ -670,7 +674,7 @@ footer .contact {
     font-weight: 700;
     width: fit-content;
     height: fit-content;
-    color: #464646;
+    color: var(--blackOne);
   }
 
   nav li {
@@ -680,7 +684,7 @@ footer .contact {
 
   nav a {
     text-decoration: none;
-    color: #39A1DF;
+    color: var(--grey);
     font-size: 0.9rem;
     
   }
@@ -689,11 +693,11 @@ footer .contact {
     grid-column: 9 / 13;
     grid-row: 1 / 2;
     font-size: 0.85rem;
-    color: #626262;
+    color: var(--blue);
   }
 
   .fa-envelope {
-    color: #009FFF;
+    color: var(--blue);
   }
 
   .envelope i {
@@ -702,7 +706,7 @@ footer .contact {
 
   .envelope a {
     text-decoration: none;
-    color: #009FFF;
+    color: var(--blue);
     padding: 0.3rem 0.3rem 0.3rem 0;
   }
 
@@ -734,7 +738,7 @@ footer .contact {
 
   .main-section h2 {
     margin-bottom: 0.5rem;
-    color: #646464;
+    color: var(--grey);
 
   }
 
@@ -746,7 +750,7 @@ footer .contact {
   .main-section p {
     margin: 1.5rem 0;
     font-weight: 200;
-    color: #797979;
+    color: var(--grey);
   }
 
   .main-section .btn {
@@ -757,14 +761,14 @@ footer .contact {
   }
 
   .main-section .call {
-    background: #0080FF;
-    color: #fff;
+    background: var(--blue);
+    color: var(--backgroundOne);
   }
 
   .main-section .download {
-    background: #fff;
-    color: #000;
-    border: 1px solid #D3D3D3;
+    background: var(--backgroundOne);
+    color: var(blackOne);
+    border: 1px solid var(--light-grey);
   }
 
   .main-section .dev-name {
@@ -774,7 +778,7 @@ footer .contact {
 
   .main-section .role {
     font-size: 1.8rem;
-    color: #39A1DF;
+    color: var(--blue);
     font-weight: 600;
   }
 
@@ -826,7 +830,7 @@ footer .contact {
   }
 
   .background-one {
-    background-color: #FEFEFE;
+    background-color: var(--backgroundOne);
     position: absolute;
     top: 0;
     left: 0;
