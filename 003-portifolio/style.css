@@ -22,6 +22,8 @@ body {
   --backgroundOne: #FFFEFF;
   --backgroundThree: #F7F8FD;
   --light-grey: #4F5B6D;
+  --footer-p-color: #999999;
+  --border-color: #D3D3D3;
 }
 
 .home-container {
@@ -71,7 +73,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #808080;
+  color: var(--grey);
   font-size: 0.9rem;
 }
 
@@ -79,11 +81,11 @@ nav a {
   grid-column: 10 / 13;
   grid-row: 1 / 2;
   font-size: 0.85rem;
-  color: #626262;
+  color: var(--blue);
 }
 
 .fa-envelope {
-  color: #009FFF;
+  color: var(--blue);
 }
 
 .envelope i {
@@ -92,7 +94,7 @@ nav a {
 
 .envelope a {
   text-decoration: none;
-  color: #009FFF;
+  color: var(--blue);
   padding: 0.3rem 0.3rem 0.3rem 0;
 }
 
@@ -119,7 +121,7 @@ nav a {
 
 .main-section h2 {
   margin-bottom: 0.5rem;
-  color: #646464;
+  color: var(--grey);
 
 }
 
@@ -131,7 +133,7 @@ nav a {
 .main-section p {
   margin: 1.5rem 0;
   font-weight: 200;
-  color: #797979;
+  color: var(--grey);
 }
 
 .main-section .btn {
@@ -142,14 +144,14 @@ nav a {
 }
 
 .main-section .call {
-  background: #0080FF;
-  color: #fff;
+  background: var(--blue);
+  color: var(--backgroundOne);
 }
 
 .main-section .download {
   background: #fff;
-  color: #000;
-  border: 1px solid #D3D3D3;
+  color: var(--grey);
+  border: 1px solid var(--border-color);
 }
 
 .main-section .dev-name {
@@ -159,7 +161,7 @@ nav a {
 
 .main-section .role {
   font-size: 1.8rem;
-  color: #39A1DF;
+  color: var(--blue);
   font-weight: 600;
 }
 
@@ -187,7 +189,7 @@ nav a {
 }
 
 .fa-git {
-  color: black;
+  color: var(--blackOne);
   grid-row: 3 / 3;
   grid-column: 9 / 11;
 }
@@ -199,13 +201,13 @@ nav a {
 }
 
 .fa-js {
-  color: black;
+  color: var(--blackOne);
   grid-row: 11 / 12;
   grid-column: 11 / 12;
 }
 
 .background-one {
-  background-color: var(--ba);
+  background-color: var(--backgroundOne);
   position: absolute;
   top: 0;
   left: 0;
@@ -254,7 +256,7 @@ nav a {
   object-position: center top;
   border-radius: 50%;
   padding: 0rem;
-  border: 3px solid #7C7C7C;
+  border: 3px solid var(--border-color);
 
 }
 
@@ -270,7 +272,7 @@ nav a {
 }
 
 .about-description .heading-description {
-  color: #797979;
+  color: var(--grey);
   font-weight: 500;
 }
 
@@ -279,8 +281,8 @@ nav a {
   border: none;
   font-size: 0.85rem;
   margin-right: 0.5rem;
-  background: #0080FF;
-  color: #fff;
+  background: var(--blue);
+  color: var(--backgroundOne);
 }
 
 .about-description .name-subsection {
@@ -292,12 +294,12 @@ nav a {
 
 .about-description .name-subsection p {
   font-size: 0.9rem;
-  color: #797979;
+  color: var(--grey);
 }
 
 .about-description .about-heading {
   padding: 0.5rem;
-  color: #0080FF;
+  color: var(--blue);
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -309,7 +311,7 @@ nav a {
   margin: 1rem 0;
   text-align: justify;
   width: 90%;
-  color: #797979;
+  color: var(--grey);
 }
 
 .about-description .details {
@@ -328,7 +330,7 @@ nav a {
 .social-icons i {
   margin-right: 1.8rem;
   font-size: 1.3rem;
-  color: #000;
+  color: var(--grey);
 }
 
 .buttons {
@@ -338,7 +340,7 @@ nav a {
 /*Qualificatios section*/
 .qualifications {
   height: 100vh;
-  background-color: #F8F9FD;
+  background-color: var(--backgroundThree);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -381,7 +383,7 @@ nav a {
 
 .bar {
   height: 0.5rem;
-  background-color: #0080ff;
+  background-color: var(--blue);
   width: 0%;
   /* Initial width is 0% */
   transition: width 0.5s ease-in-out;
@@ -390,7 +392,7 @@ nav a {
 .percent p {
   font-size: 0.75rem;
   margin-left: 0.5rem;
-  color: #0080ff;
+  color: var(--blue);
   font-weight: 700;
 }
 
@@ -421,7 +423,7 @@ nav a {
 
 .qlfn {
   align-self: flex-start;
-  color: #0080ff;
+  color: var(--blue);
   font-weight: 400;
   font-size: 0.9rem;
 }
@@ -438,12 +440,13 @@ nav a {
   padding: 0.5rem 0 0 0;
   font-weight: 500;
   font-size: 1.3rem;
+  color: var(--grey);
 }
 
 .education-template {
   margin: 0 0 1.5rem 3rem;
   padding: 0 0 0 1rem;
-  border-left: 1px solid #8A8A8A;
+  border-left: 1px solid var(--border-color);
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -454,7 +457,7 @@ nav a {
 .education-template h3 {
   font-size: 0.9rem;
   padding: 0 0 0.5rem 0;
-  color: #2F2F2F;
+  color: var(--grey);
   font-weight: 600;
 }
 
@@ -464,6 +467,7 @@ nav a {
   font-weight: 200;
   line-height: 1rem;
   height: 5rem;
+  color: var(--grey);
 }
 
 .education-template button {
@@ -485,7 +489,7 @@ nav a {
 }
 
 .portifolio h3 {
-  color: #0080ff;
+  color: var(--blue);
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -499,14 +503,14 @@ nav a {
 
 .portifolio li {
   list-style-type: none;
-  color: #2F2F2F;
+  color: var(--grey)F;
 }
 
 
 .portifolio h2 {
   padding: 1.5rem;
   font-size: 1.4rem;
-  color: #4F4F4F;
+  color: var(--grey);
 }
 
 .portifolio .projects {
@@ -530,7 +534,7 @@ nav a {
   margin: 0 0 0 0;
   padding: 0.5rem 0 0.1rem 0;
   font-size: 0.9rem;
-  color: #0080ff;
+  color: var(--blue);
   font-weight: 500;
 }
 
@@ -555,8 +559,8 @@ nav a {
 }
 
 .project-card .project-link {
-  background: #0080FF;
-  color: #FFF;
+  background: var(--blue);
+  color: var(--backgroundOne);
   padding: 0.4rem 1rem;
   font-size: 0.75rem;
   border: none;
@@ -588,33 +592,33 @@ footer {
 }
 
 footer h3 {
-  color: #fff;
+  color: var(--footer-p-color);
   font-size: 1rem;
   font-weight: 300;
 }
 
 footer h2 {
-  color: #999999;
+  color: var(--footer-p-color);
   font-weight: 500;
 }
 
 .copyright p {
-  color: #999999;
+  color: var(--footer-p-color);
   font-size: 0.85rem;
 }
 
 footer .footer-icons {
-  border-top: 1px solid #999999;
+  border-top: 1px solid var(--footer-p-color);
   padding-top: 0.8rem;
 }
 
 footer .social-icons i {
-  color: #999999;
+  color: var(--footer-p-color);
 }
 
 footer .contact {
-  background: #0080FF;
-  color: #FFF;
+  background: var(--blue);
+  color: var(--backgroundOne);
   padding: 0.7rem 1.5rem;
   font-size: 0.9rem;
   border: none;
@@ -768,7 +772,7 @@ footer .contact {
   .main-section .download {
     background: var(--backgroundOne);
     color: var(blackOne);
-    border: 1px solid var(--light-grey);
+    border: 1px solid var(--border-color);
   }
 
   .main-section .dev-name {
@@ -810,7 +814,7 @@ footer .contact {
 
   .fa-git {
     display: none;
-    color: black;
+    color: var(--grey);
     grid-row: 3 / 3;
     grid-column: 9 / 11;
   }
@@ -875,7 +879,7 @@ footer .contact {
     object-position: center top;
     border-radius: 50%;
     padding: 0rem;
-    border: 1px solid #7C7C7C;
+    border: 1px solid var(--grey);
   }
 
   .about-image .desktop {
@@ -1038,7 +1042,7 @@ footer .contact {
   .education-template {
     margin: 0 0 1.5rem 3rem;
     padding: 0 0 0 1rem;
-    border-left: 1px solid var(--light-grey);
+    border-left: 1px solid var(--border-color);
     list-style-type: none;
     display: flex;
     flex-direction: column;
