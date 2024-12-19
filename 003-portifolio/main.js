@@ -44,7 +44,6 @@ const projectsContainer = document.querySelector('.projects');
 let projectCard = "";
 
 
-
 projects.map((project) => {
 
   let technologies = "";
