@@ -20,7 +20,7 @@ const projects = [
 console.log(projects)
 
 const HTML = "90%";
-const CSS = "95%";
+const CSS = "85%";
 const javascript = "85%";
 const react = "80%";
 const git = "85%";
