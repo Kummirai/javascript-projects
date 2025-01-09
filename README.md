@@ -1,5 +1,6 @@
 # javascript-projects
 
-https://yorecipes.netlify.app/
+[001-recip[es-app](https://yorecipes.netlify.app/)
 
-https://devskool.netlify.app/
+[002-online-school-app](https://devskool.netlify.app/)
+
