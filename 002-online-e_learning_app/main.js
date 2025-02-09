@@ -10,7 +10,7 @@
      courseId: 1,
      courseName: "Javascript Tutorial Full Course - Beginner to Pro (2024)",
      courseInstructor: "SuperSimpleDev",
-     courseInstructorImg: "./images/AC8565D2-4085-416E-A1E5-0813BDBB314E.jpeg",
+     courseInstructorImg: "./images\portrait-businessman-office-3.jpg",
      courseInstructorRole: "Instructor",
      coursecategory: "Javascript",
      courseUrl: "https://www.youtube.com/watch?v=EerdGm-ehJQ",
