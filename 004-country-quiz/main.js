@@ -1493,25 +1493,34 @@ const countriesCapitals = [
 
 const question = document.querySelector("span");
 const answer = document.querySelector("input");
-
-let country = "";
-let countryData = "";
+const points = document.querySelector(".score");
+let score = 0;
 
 const getCountry = () => {
   const countryData =
     countriesCapitals[Math.floor(Math.random() * countriesCapitals.length)];
-  country = countryData.name;
-  console.log(country);
+  const country = countryData.name;
   question.innerHTML = country;
 
   answer.addEventListener("change", (e) => {
+    answer.value = "";
     let myCapital = e.target.value;
     if (myCapital === countryData.capital) {
-      answer.classList.add("correct");
+      score = score + 1;
     } else {
-      console.log("Incorrect!");
+      score = score - 1;
     }
+    points.innerHTML = score;
+    getCountry();
   });
 };
+
+answer.addEventListener("keypress", (e) => {
+  if (e.key === "Enter" && answer.value === "") {
+    score = score - 1;
+    points.innerHTML = score;
+    getCountry();
+  }
+});
 
 getCountry();
