@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --baltic-sea: #26252a;
+  --bon-jour: #e0dcdc;
+  --roti: #c2a243;
+  --lightning-yellow: #fbbf14;
+  --empress: #7a7779;
+  --tan: #cda48d;
+  --manatee: #8c91a7;
+  --pickled-bean: #6c4628;
+  --energy-yellow: #f7d851;
+  --cape-palliser: #a06c4d;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo h1 {
+  font-weight: 500;
+  font-size: 1.3rem;
+
+}
+
+header .logo h2 {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+
+header .logo img{
+    width: 7.5rem;
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: var(--baltic-sea);
+  font-weight: 500;
+}
