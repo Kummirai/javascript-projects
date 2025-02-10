@@ -1,0 +1,22 @@
+:root {
+  --cocoa-brown: #2a1c19;
+  --casablanca: #f6c24b;
+  --coconut-cream: #f8eed4;
+  --roof-terracotta: #b44020;
+  --harvest-gold: #e5c277;
+  --mountain-mist: #a5a2a6;
+  --sisal: #d0c7bc;
+  --sapling: #dccba8;
+  --bombay: #b3b4b8;
+  --christi: #6c9b0d;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
