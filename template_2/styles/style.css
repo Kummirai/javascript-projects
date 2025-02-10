@@ -1,5 +1,5 @@
 :root {
-  --cocoa-brown: #2a1c19;
+  --cocoa-brown: #492a24;
   --casablanca: #f6c24b;
   --coconut-cream: #f8eed4;
   --roof-terracotta: #b44020;
@@ -61,7 +61,7 @@ header {
 .logo h1 {
   font-size: 1.2rem;
   color: var(--cocoa-brown);
-  font-weight: 400;
+  font-weight: 500;
   padding: 0 0 0 1rem;
 }
 
