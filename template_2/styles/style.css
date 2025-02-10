@@ -104,16 +104,16 @@ main {
 
 main :nth-child(1) {
   grid-column: 2 / 6;
-  grid-row: 3 / 13;
+  grid-row: 4 / 13;
 }
 
 main :nth-child(2) {
   grid-column: 7 / 13;
-  grid-row: 3 / 10;
+  grid-row: 2 / 10;
 }
 
 main :nth-child(2) img {
-  width: 35rem;
+  width: 620px;
 }
 
 main {
@@ -145,7 +145,7 @@ main .promo {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  grid-column: 7 ;
+  grid-column: 8 ;
   grid-row: 7;
 }
 
