@@ -24,7 +24,25 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.container {
+  /* background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: rgb(246, 194, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 194, 75, 1) 0%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(246, 194, 75, 1) 100%
+  );
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
 header {
+  grid-column: 2 / 12;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,8 +82,8 @@ header {
   color: var(--cocoa-brown);
 }
 
-.delivery p{
-    font-size: 0.8rem;
+.delivery p {
+  font-size: 0.8rem;
 }
 
 nav a {
@@ -74,4 +92,47 @@ nav a {
   font-size: 0.85rem;
   font-weight: 500;
   margin-left: 2.5rem;
+}
+
+main {
+  height: 100%;
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+main :nth-child(1) {
+  grid-column: 2 / 6;
+  grid-row: 4 / 13;
+}
+
+main :nth-child(2) {
+  grid-column: 7 / 13;
+  grid-row: 3 / 10;
+}
+
+main :nth-child(2) img {
+  width: 35rem;
+}
+
+main {
+  color: var(--cocoa-brown);
+}
+
+main h2 {
+  font-size: 4rem;
+  font-family: "Bevan", serif;
+  font-weight: 500;
+}
+
+main h3 {
+  font-size: 2.5rem;
+  font-family: "Bevan", serif;
+  font-weight: 300;
+}
+
+main p {
+  border: 1px dashed var(--cocoa-brown);
+  padding: 0.5rem;
 }
