@@ -165,6 +165,7 @@ main .promo p {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
+  margin-top: 2.5rem;
   padding: 2rem;
   color: var(--coconut-cream);
 }
@@ -216,6 +217,7 @@ main .promo p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: 2rem 0;
 }
 
 .choose-enjoy article {
@@ -225,7 +227,7 @@ main .promo p {
   justify-content: center;
 }
 
-.choose-enjoy article h2 {
+.choose-enjoy .choose {
   font-size: 1rem;
   background-color: var(--casablanca);
   padding: 0.5rem 1rem;
@@ -234,7 +236,7 @@ main .promo p {
 .choose-enjoy article h3 {
   font-size: 2rem;
   font-family: "Bevan", serif;
-  font-weight: 600;
+  font-weight: 500;
   margin: 1rem 0;
 }
 
