@@ -387,3 +387,55 @@ input[type="submit"]:hover {
   background-color: #bd2823;
   cursor: pointer;
 }
+
+footer {
+  height: 30vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 4, 1fr;
+  padding-left: 2rem;
+}
+
+footer article {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+footer article div {
+  display: flex;
+  align-items: center;
+}
+
+footer article div .fas {
+  font-size: 32px;
+  margin-right: 1rem;
+}
+
+footer p {
+  grid-column: 1;
+  text-align: justify;
+  margin: 1rem 0;
+}
+
+footer .social {
+  grid-column: 4;
+}
+
+.social a {
+  font-size: 1.3rem;
+}
+
+footer .mail {
+  grid-column: 4;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .mail :nth-child(1) {
+  margin-bottom: 0.2rem;
+}
+
+footer .mail .fas {
+  padding-right: 0.5rem;
+}
