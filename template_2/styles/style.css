@@ -322,3 +322,7 @@ main .promo p {
   font-weight: 300;
   text-align: justify;
 }
+
+fieldset {
+  border: none;
+}
