@@ -2,7 +2,7 @@
   --cocoa-brown: #492a24;
   --casablanca: #f6c24b;
   --coconut-cream: #f8eed4;
-  --roof-terracotta: #b44020;
+  --roof-terracotta: #cc211b;
   --harvest-gold: #e5c277;
   --mountain-mist: #a5a2a6;
   --sisal: #d0c7bc;
@@ -137,7 +137,7 @@ main p {
 }
 
 main .promo {
-  background-color: red;
+  background-color: var(--roof-terracotta);
   color: var(--coconut-cream);
   border-radius: 50%;
   display: flex;
@@ -212,7 +212,7 @@ main .promo p {
 /*order now section styles */
 
 .choose-enjoy {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -237,10 +237,21 @@ main .promo p {
   align-items: center;
 }
 
-
-.order-now button{
+.order-now p {
+  margin: 1rem 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.order-now button {
   color: var(--coconut-cream);
   background-color: var(--roof-terracotta);
   border: none;
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.order-now button:hover {
+  background-color: #a8140f;
+  cursor: pointer;
 }
