@@ -389,11 +389,16 @@ input[type="submit"]:hover {
 }
 
 footer {
-  height: 30vh;
+  color: #fff;
+  height: 32vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 4, 1fr;
-  padding-left: 2rem;
+  padding: 2rem 0 0 2rem;
+  background-image: url("../images/burger.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 footer article {
@@ -407,14 +412,25 @@ footer article div {
 }
 
 footer article div .fas {
-  font-size: 32px;
+  font-size: 52px;
   margin-right: 1rem;
 }
 
+footer .fas,
+footer a {
+  color: #fff;
+}
+
+footer a {
+  font-weight: 300;
+}
 footer p {
   grid-column: 1;
   text-align: justify;
   margin: 1rem 0;
+  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 200;
 }
 
 footer .social {
