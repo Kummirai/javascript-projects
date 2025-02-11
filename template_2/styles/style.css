@@ -169,16 +169,16 @@ main .promo p {
   color: var(--coconut-cream);
 }
 
-.burgers-container article{
+.burgers-container article {
   padding: 1.5rem;
 }
 
-.burgers-container article h2{
+.burgers-container article h2 {
   font-size: 0.9rem;
   font-weight: 400;
 }
 
-.burgers-container article h3{
+.burgers-container article h3 {
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -207,4 +207,40 @@ main .promo p {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
+}
+
+/*order now section styles */
+
+.choose-enjoy {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.choose-enjoy article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-now {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.order-now article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.order-now button{
+  color: var(--coconut-cream);
+  background-color: var(--roof-terracotta);
+  border: none;
+  padding: 0.5rem 0.8rem;
 }
