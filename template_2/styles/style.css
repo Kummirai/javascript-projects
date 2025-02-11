@@ -42,11 +42,11 @@ body {
 }
 
 header {
-  grid-column: 2 / 12;
+  grid-column: 1 / 13;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: 2rem ;
 }
 .logo {
   display: flex;
@@ -99,10 +99,11 @@ main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
+  padding: 2rem;
 }
 
 main :nth-child(1) {
-  grid-column: 2 / 6;
+  grid-column: 1 / 6;
   grid-row: 4 / 13;
 }
 
