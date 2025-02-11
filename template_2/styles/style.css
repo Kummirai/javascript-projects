@@ -225,6 +225,26 @@ main .promo p {
   justify-content: center;
 }
 
+.choose-enjoy article h2 {
+  font-size: 1rem;
+  background-color: var(--casablanca);
+  padding: 0.5rem 1rem;
+}
+
+.choose-enjoy article h3 {
+  font-size: 2rem;
+  font-family: "Bevan", serif;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.choose-enjoy article p {
+  width: 75%;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
 .order-now {
   display: flex;
   align-items: center;
