@@ -95,6 +95,7 @@ nav a {
 }
 
 main {
+  height: 100%;
   grid-column: 1 / 13;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -104,12 +105,12 @@ main {
 
 main :nth-child(1) {
   grid-column: 1 / 6;
-  grid-row: 4 / 13;
+  grid-row: 4 / 8;
 }
 
 main :nth-child(2) {
   grid-column: 7 / 13;
-  grid-row: 2 / 10;
+  grid-row: 2 / 9;
 }
 
 main :nth-child(2) img {
