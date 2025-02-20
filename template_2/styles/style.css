@@ -192,7 +192,11 @@ main .small-burgers {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: 1 1 auto;
+  border: 1px solid transparent;
+}
+
+.opacity {
+  border: 1px solid var(--casablanca);
 }
 
 main .small-burgers img {
@@ -206,6 +210,7 @@ main .arrows {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: 1;
 }
 
 main .arrows .fas {
