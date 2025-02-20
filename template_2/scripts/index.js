@@ -58,6 +58,21 @@ const burgerSection = () => {
       myBurgers[burgerItems-1].classList.remove("opacity");
     }
   });
+
+
+  leftArrow.addEventListener('click', ()=>{
+    initialPosition -= 1;
+    if (initialPosition >= 0) {
+      myBurgers[initialPosition].classList.add("opacity");
+      const prevPosition = initialPosition + 1;
+      myBurgers[prevPosition].classList.remove("opacity");
+      console.log(initialPosition);
+    } else if (initialPosition < 0) {
+      initialPosition = burgerItems-1;
+      myBurgers[initialPosition].classList.add("opacity");
+      myBurgers[0].classList.remove("opacity");
+    }
+  })
 };
 
 burgerSection();
