@@ -34,7 +34,7 @@ let smallBurger = "";
 const burgerSection = () => {
   burgers.map((burger) => {
     smallBurger += `
-        <div class="sm-burger"><img src=${burger.image} alt="" /></div>
+        <div class="sm-burger"><img src=${burger.image} alt="burger"/></div>
        `;
   });
 
@@ -55,12 +55,11 @@ const burgerSection = () => {
     } else if (initialPosition === burgerItems) {
       initialPosition = 0;
       myBurgers[initialPosition].classList.add("opacity");
-      myBurgers[burgerItems-1].classList.remove("opacity");
+      myBurgers[burgerItems - 1].classList.remove("opacity");
     }
   });
 
-
-  leftArrow.addEventListener('click', ()=>{
+  leftArrow.addEventListener("click", () => {
     initialPosition -= 1;
     if (initialPosition >= 0) {
       myBurgers[initialPosition].classList.add("opacity");
@@ -68,11 +67,11 @@ const burgerSection = () => {
       myBurgers[prevPosition].classList.remove("opacity");
       console.log(initialPosition);
     } else if (initialPosition < 0) {
-      initialPosition = burgerItems-1;
+      initialPosition = burgerItems - 1;
       myBurgers[initialPosition].classList.add("opacity");
       myBurgers[0].classList.remove("opacity");
     }
-  })
+  });
 };
 
 burgerSection();
