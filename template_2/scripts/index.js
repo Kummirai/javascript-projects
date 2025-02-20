@@ -5,27 +5,27 @@ const smallBurgerContainer = document.querySelector(".small-burgers");
 const burgers = [
   {
     id: 1,
-    image: "../images/hamburger.png",
+    image: "images/hamburger.png",
   },
   {
     id: 2,
-    image: "../images/product2.png",
+    image: "images/product2.png",
   },
   {
     id: 3,
-    image: "../images/hamburger.png",
+    image: "images/hamburger.png",
   },
   {
     id: 4,
-    image: "../images/product2.png",
+    image: "images/product2.png",
   },
   {
     id: 5,
-    image: "../images/product1.png",
+    image: "images/product1.png",
   },
   {
     id: 6,
-    image: "../images/hamburger.png",
+    image: "images/hamburger.png",
   },
 ];
 
