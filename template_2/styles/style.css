@@ -60,7 +60,7 @@ header {
   align-items: center;
 }
 
-.nav-delivery nav{
+.nav-delivery nav {
   display: flex;
   justify-content: space-evenly;
   width: 520px;
@@ -92,7 +92,7 @@ nav a {
   top: 0;
   right: 0;
   height: 100%;
-  width: 45.5%;
+  width: 46%;
   z-index: -1;
 }
 
@@ -101,13 +101,14 @@ main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  padding: 0 2rem 2rem 2rem;
+  padding: 0 2rem 0 2rem;
 }
 
 main .main-heading {
   grid-column: 1 / 5;
   grid-row: 3 / 10;
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -124,6 +125,14 @@ main .main-heading p {
   font-weight: 300;
 }
 
+main .main-heading .new {
+  background-color: var(--roof-terracotta);
+  width: fit-content;
+  padding: 2px 6px;
+  font-weight: 700;
+  color: var(--sisal);
+}
+
 main .call-to-action {
   display: flex;
   align-items: center;
@@ -138,6 +147,8 @@ main .call-to-action h2 {
 main .main-heading h1 {
   font-size: 3.2rem;
   color: var(--cocoa-brown);
+  font-weight: 700;
+  font-family: "Bevan", serif;
 }
 
 main .main-image {
@@ -160,17 +171,40 @@ main .mini-burger img {
 
 main .small-burgers {
   grid-column: 1 / 6;
-  grid-row: 11 / 13;
+  grid-row: 12 / 13;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 1 1 auto;
 }
 
-main .small-burgers img{
+main .small-burgers img {
   width: 80px;
   padding: 10px;
 }
+
+main .arrows {
+  grid-column: 7 / 8;
+  grid-row: 12 / 13;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .arrows .fas {
+  font-size: 1.5rem;
+  color: var(--sisal);
+  background-color: var(--roof-terracotta);
+  padding: 4px 10px;
+  aspect-ratio: 1 /1;
+  border-radius: 50%;
+}
+
+main .arrows .fas:hover {
+  background-color: #a8140f;
+  cursor: pointer;
+}
+
 /*burgers-container*/
 .burgers-container {
   height: 50vh;
