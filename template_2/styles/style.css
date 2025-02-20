@@ -92,7 +92,7 @@ nav a {
   top: 0;
   right: 0;
   height: 100%;
-  width: 46%;
+  width: 47%;
   z-index: -1;
 }
 
@@ -157,11 +157,11 @@ main .main-image {
 }
 
 main .main-image img {
-  width: 500px;
+  width: 600px;
 }
 
 main .mini-burger {
-  grid-column: 10 / 12;
+  grid-column: 12 / 13;
   grid-row: 4 / 8;
 }
 
