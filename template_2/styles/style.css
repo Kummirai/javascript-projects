@@ -29,7 +29,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 3rem 2rem 0 2rem;
 }
 .logo {
   display: flex;
@@ -114,7 +114,7 @@ main {
 
 main .main-heading {
   grid-column: 1 / 6;
-  grid-row: 3 / 11;
+  grid-row: 3 / 10;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -170,7 +170,7 @@ main .main-heading h1 {
 
 main .main-image {
   grid-column: 5 / 10;
-  grid-row: 2 / 10;
+  grid-row: 1 / 10;
 }
 
 main .main-image img {
