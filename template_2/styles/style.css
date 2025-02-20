@@ -1,6 +1,6 @@
 :root {
   --cocoa-brown: #492a24;
-  --casablanca: #f6c24b;
+  --casablanca: #ffc130f6;
   --coconut-cream: #f8eed4;
   --roof-terracotta: #cc211b;
   --harvest-gold: #e5c277;
@@ -60,6 +60,11 @@ header {
   align-items: center;
 }
 
+.nav-delivery nav{
+  display: flex;
+  justify-content: space-evenly;
+  width: 520px;
+}
 .delivery .fa-truck {
   padding-right: 1rem;
   color: var(--cocoa-brown);
@@ -74,7 +79,6 @@ nav a {
   color: var(--cocoa-brown);
   font-size: 0.85rem;
   font-weight: 500;
-  margin-left: 2.5rem;
 }
 
 .container {
@@ -88,7 +92,7 @@ nav a {
   top: 0;
   right: 0;
   height: 100%;
-  width: 50%;
+  width: 45.5%;
   z-index: -1;
 }
 
@@ -154,6 +158,19 @@ main .mini-burger img {
   width: 300px;
 }
 
+main .small-burgers {
+  grid-column: 1 / 6;
+  grid-row: 11 / 13;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+main .small-burgers img{
+  width: 80px;
+  padding: 10px;
+}
 /*burgers-container*/
 .burgers-container {
   height: 50vh;
