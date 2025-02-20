@@ -215,11 +215,14 @@ main .arrows .fas {
   padding: 4px 10px;
   aspect-ratio: 1 /1;
   border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 
 main .arrows .fas:hover {
-  background-color: #a8140f;
-  cursor: pointer;
+  background-color: transparent;
+  color: var(--roof-terracotta);
+  border: 3px solid var(--roof-terracotta);
 }
 
 /*burgers-container*/
