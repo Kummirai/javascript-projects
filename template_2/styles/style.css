@@ -540,3 +540,70 @@ footer .mail .fas {
   padding-right: 0.5rem;
 }
 
+/*menu page styles*/
+
+.menu-page {
+  height: 100vh;
+}
+.menu-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.menu-container .dashboard {
+  border: 1px solid var(--cocoa-brown);
+  grid-column: 1 / 3;
+  grid-row: 1/ 13;
+}
+
+.menu-container .search {
+  border: 1px solid var(--cocoa-brown);
+  grid-column: 3 / 13;
+  grid-row: 1 / 2;
+}
+
+.menu-container .menu-main-page {
+  grid-column: 3 / 13;
+  grid-row: 2 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.categories-heading {
+  border: 1px solid var(--casablanca);
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+}
+
+.categories {
+  border: 1px solid var(--roof-terracotta);
+  grid-column: 1 / 9;
+  grid-row: 2 / 4;
+}
+
+.products-heading {
+  border: 1px solid var(--christi);
+  grid-column: 1 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products {
+  border: 1px solid var(--roof-terracotta);
+  grid-column: 1 / 9;
+  grid-row: 5 / 13;
+}
+
+.invoice {
+  border: 1px solid var(--christi);
+  grid-column: 9 / 13;
+  grid-row: 2 / 13;
+}
