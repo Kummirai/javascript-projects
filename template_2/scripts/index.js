@@ -75,6 +75,7 @@ const burgerSection = () => {
       myBurgers[initialPosition].classList.add("opacity");
       const prevPosition = initialPosition - 1;
       myBurgers[prevPosition].classList.remove("opacity");
+
       mainProductDesc.innerHTML = burgers[initialPosition].desc;
       mainProduct.innerHTML = burgers[initialPosition].title;
       mainProductPrice.innerHTML = burgers[initialPosition].price;
@@ -99,6 +100,7 @@ const burgerSection = () => {
       myBurgers[initialPosition].classList.add("opacity");
       const prevPosition = initialPosition + 1;
       myBurgers[prevPosition].classList.remove("opacity");
+
       mainProductDesc.innerHTML = burgers[initialPosition].desc;
       mainProduct.innerHTML = burgers[initialPosition].title;
       mainProductPrice.innerHTML = burgers[initialPosition].price;
