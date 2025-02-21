@@ -19,7 +19,7 @@ const burgers = [
   {
     id: 2,
     title: "D-Tripple Burger",
-    image: "images/product2.png",
+    image: "images/product3.png",
     desc: "Twice the beef, twice the cheese, and double the flavor! Our handcrafted double cheeseburger is stacked with premium Angus beef, melted cheddar, and crisp lettuce for a mouthwatering experience",
     price: "$4.99",
   },
@@ -47,7 +47,7 @@ const burgers = [
   {
     id: 6,
     title: "Ultimate Veggie Burger",
-    image: "images/hamburger.png",
+    image: "images/product2.png",
     desc: "Plant-based perfection! Our Ultimate Veggie Burger is crafted with a hearty black bean patty, crisp greens, fresh avocado, and zesty vegan aioli for a guilt-free yet deliciously satisfying bite.",
     price: "$4.50",
   },
@@ -86,6 +86,7 @@ const burgerSection = () => {
       mainProduct.innerHTML = burgers[initialPosition].title;
       mainProductPrice.innerHTML = burgers[initialPosition].price;
       mainProductImg.src = burgers[initialPosition].image;
+      nextProductImg.src = burgers[burgers.length - 1].image;
 
       myBurgers[initialPosition].classList.add("opacity");
       myBurgers[burgerItems - 1].classList.remove("opacity");
@@ -107,10 +108,12 @@ const burgerSection = () => {
       initialPosition = burgerItems - 1;
       myBurgers[initialPosition].classList.add("opacity");
       myBurgers[0].classList.remove("opacity");
+
       mainProductDesc.innerHTML = burgers[initialPosition].desc;
       mainProduct.innerHTML = burgers[initialPosition].title;
       mainProductPrice.innerHTML = burgers[initialPosition].price;
       mainProductImg.src = burgers[initialPosition].image;
+      nextProductImg.src = burgers[0].image;
     }
   });
 };
