@@ -2,18 +2,24 @@ const leftArrow = document.querySelector(".fa-angle-left");
 const rightArrow = document.querySelector(".fa-angle-right");
 const smallBurgerContainer = document.querySelector(".small-burgers");
 
+const mainProduct = document.querySelector("#main-product");
+const mainProductDesc = document.querySelector("#main-product-desc");
+const mainProductPrice = document.querySelector("#main-product-price");
+const mainProductImg = document.querySelector("#main-product-img");
+const nextProductImg = document.querySelector("#next-product-img");
+
 const burgers = [
   {
     id: 1,
-    title: "The Ultimate Smash Burger",
+    title: "Tripple Chiz Burger",
     image: "images/hamburger.png",
     desc: "Savor the perfect crispy-edged, juicy smash burger, layered with melted American cheese, caramelized onions, and tangy house sauce on a buttery toasted brioche bun. A bite of pure satisfaction awaits!",
   },
   {
     id: 2,
-    title: "Double Trouble Cheeseburger",
+    title: "D-Tripple Burger",
     image: "images/product2.png",
-    desc: "Twice the beef, twice the cheese, and double the flavor! Our handcrafted double cheeseburger is stacked with premium Angus beef, melted cheddar, and crisp lettuce for a mouthwatering experience you won’t forget",
+    desc: "Twice the beef, twice the cheese, and double the flavor! Our handcrafted double cheeseburger is stacked with premium Angus beef, melted cheddar, and crisp lettuce for a mouthwatering experience",
   },
   {
     id: 3,
@@ -25,17 +31,17 @@ const burgers = [
     id: 4,
     title: "BBQ Bourbon Bliss Burger",
     image: "images/product2.png",
-    desc: "Smoky, sweet, and savory—this BBQ Bourbon Bliss Burger is a flavor explosion! Hickory-smoked bacon, tangy bourbon BBQ sauce, crispy onion straws, and melted cheddar bring backyard BBQ vibes to every bite.",
+    desc: "Smoky and savory—this BBQ Bourbon Bliss Burger is a flavor explosion! Hickory-smoked bacon, tangy bourbon BBQ sauce, crispy onion straws, and melted cheddar bring backyard BBQ vibes to every bite.",
   },
   {
     id: 5,
-    title: "Truffle Mushroom Swiss Burger",
+    title: "Mushroom Swiss Burger",
     image: "images/product1.png",
     desc: "Indulge in elegance with our Truffle Mushroom Swiss Burger. Juicy beef meets sautéed mushrooms, Swiss cheese, and a hint of truffle aioli for a gourmet twist on a classic favorite.",
   },
   {
     id: 6,
-    title: "Truffle Mushroom Swiss Burger",
+    title: "Ultimate Veggie Burger",
     image: "images/hamburger.png",
     desc: "Plant-based perfection! Our Ultimate Veggie Burger is crafted with a hearty black bean patty, crisp greens, fresh avocado, and zesty vegan aioli for a guilt-free yet deliciously satisfying bite.",
   },
@@ -63,9 +69,12 @@ const burgerSection = () => {
       myBurgers[initialPosition].classList.add("opacity");
       const prevPosition = initialPosition - 1;
       myBurgers[prevPosition].classList.remove("opacity");
-      console.log(initialPosition);
+      mainProductDesc.innerHTML = burgers[initialPosition].desc;
+      mainProduct.innerHTML = burgers[initialPosition].title;
     } else if (initialPosition === burgerItems) {
       initialPosition = 0;
+      mainProductDesc.innerHTML = burgers[initialPosition].desc;
+      mainProduct.innerHTML = burgers[initialPosition].title;
       myBurgers[initialPosition].classList.add("opacity");
       myBurgers[burgerItems - 1].classList.remove("opacity");
     }
@@ -77,7 +86,6 @@ const burgerSection = () => {
       myBurgers[initialPosition].classList.add("opacity");
       const prevPosition = initialPosition + 1;
       myBurgers[prevPosition].classList.remove("opacity");
-      console.log(initialPosition);
     } else if (initialPosition < 0) {
       initialPosition = burgerItems - 1;
       myBurgers[initialPosition].classList.add("opacity");
