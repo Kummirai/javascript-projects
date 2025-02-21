@@ -4,7 +4,7 @@
   --coconut-cream: #f8eed4;
   --roof-terracotta: #cc211b;
   --harvest-gold: #e5c277;
-  --mountain-mist: #cfcfcf;
+  --mountain-mist: #f8f8f8;
   --sisal: #ffffff;
   --sapling: #dccba8;
   --bombay: #b3b4b8;
@@ -572,6 +572,8 @@ footer .mail .fas {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   gap: 10px;
+  padding: 10px;
+  background-color: var(--mountain-mist);
 }
 
 .categories-heading {
@@ -584,7 +586,7 @@ footer .mail .fas {
 
 .categories {
   border: 1px solid var(--roof-terracotta);
-  grid-column: 1 / 9;
+  grid-column: 1 / 10;
   grid-row: 2 / 4;
 }
 
@@ -598,12 +600,12 @@ footer .mail .fas {
 
 .products {
   border: 1px solid var(--roof-terracotta);
-  grid-column: 1 / 9;
+  grid-column: 1 / 10;
   grid-row: 5 / 13;
 }
 
 .invoice {
   border: 1px solid var(--christi);
-  grid-column: 9 / 13;
+  grid-column: 10 / 13;
   grid-row: 2 / 13;
 }
