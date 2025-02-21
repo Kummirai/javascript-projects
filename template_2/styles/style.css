@@ -145,7 +145,7 @@ main .main-heading p {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 92%;
+  max-width: 90%;
 }
 
 main .main-heading .new {
