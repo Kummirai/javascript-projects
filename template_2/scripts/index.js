@@ -5,27 +5,39 @@ const smallBurgerContainer = document.querySelector(".small-burgers");
 const burgers = [
   {
     id: 1,
+    title: "The Ultimate Smash Burger",
     image: "images/hamburger.png",
+    desc: "Savor the perfect crispy-edged, juicy smash burger, layered with melted American cheese, caramelized onions, and tangy house sauce on a buttery toasted brioche bun. A bite of pure satisfaction awaits!",
   },
   {
     id: 2,
+    title: "Double Trouble Cheeseburger",
     image: "images/product2.png",
+    desc: "Twice the beef, twice the cheese, and double the flavor! Our handcrafted double cheeseburger is stacked with premium Angus beef, melted cheddar, and crisp lettuce for a mouthwatering experience you won’t forget",
   },
   {
     id: 3,
+    title: "Spicy Inferno Burger",
     image: "images/hamburger.png",
+    desc: "Heat lovers, meet your match! Our Spicy Inferno Burger packs a fiery punch with jalapeños, pepper jack cheese, and smoky chipotle mayo on a toasted sesame bun. Dare to take a bite?",
   },
   {
     id: 4,
+    title: "BBQ Bourbon Bliss Burger",
     image: "images/product2.png",
+    desc: "Smoky, sweet, and savory—this BBQ Bourbon Bliss Burger is a flavor explosion! Hickory-smoked bacon, tangy bourbon BBQ sauce, crispy onion straws, and melted cheddar bring backyard BBQ vibes to every bite.",
   },
   {
     id: 5,
+    title: "Truffle Mushroom Swiss Burger",
     image: "images/product1.png",
+    desc: "Indulge in elegance with our Truffle Mushroom Swiss Burger. Juicy beef meets sautéed mushrooms, Swiss cheese, and a hint of truffle aioli for a gourmet twist on a classic favorite.",
   },
   {
     id: 6,
+    title: "Truffle Mushroom Swiss Burger",
     image: "images/hamburger.png",
+    desc: "Plant-based perfection! Our Ultimate Veggie Burger is crafted with a hearty black bean patty, crisp greens, fresh avocado, and zesty vegan aioli for a guilt-free yet deliciously satisfying bite.",
   },
 ];
 
