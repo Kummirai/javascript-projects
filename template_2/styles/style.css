@@ -546,7 +546,7 @@ footer .mail .fas {
   height: 100vh;
 }
 .menu-container {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -623,14 +623,40 @@ footer .mail .fas {
 }
 
 .categories {
-  border: 1px solid var(--roof-terracotta);
   grid-column: 1 / 10;
-  grid-row: 2 / 4;
+  grid-row: 2 / 5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 8px;
+}
+
+.categories article {
+  display: flex;
+  align-items: center;
+  background-color: var(--sisal);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.categories img {
+  width: 40px;
+  padding: 3px;
+  background-color: var(--coconut-cream);
+  border-radius: 5px;
+}
+
+.categories h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-left: 10px;
+  color: var(--cocoa-brown);
 }
 
 .products-heading {
   border: 1px solid var(--christi);
   grid-column: 1 / 4;
+  grid-row: 5 / 6;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -639,7 +665,7 @@ footer .mail .fas {
 .products {
   border: 1px solid var(--roof-terracotta);
   grid-column: 1 / 10;
-  grid-row: 5 / 13;
+  grid-row: 6 / 13;
 }
 
 .invoice {
