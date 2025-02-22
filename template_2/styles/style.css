@@ -554,9 +554,48 @@ footer .mail .fas {
 }
 
 .menu-container .dashboard {
-  border: 1px solid var(--cocoa-brown);
   grid-column: 1 / 3;
   grid-row: 1/ 13;
+  padding: 0 10px 10px 0;
+}
+
+.menu-container .dashboard-top {
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-container .dashboard article {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--bombay);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.menu-container .dashboard article:hover {
+  color: var(--casablanca);
+  border: 1px solid var(--casablanca);
+}
+
+.menu-container .dashboard article h3 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-left: 10px;
+  color: var(--cocoa-brown);
+}
+
+.menu-container .dashboard article h3:hover {
+  color: var(--casablanca);
+}
+
+.menu-container .dashboard article i {
+  color: var(--bombay);
+}
+
+.menu-container .dashboard article i:hover {
+  color: var(--casablanca);
 }
 
 .menu-container .search {
