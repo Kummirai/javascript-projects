@@ -677,7 +677,6 @@ footer .mail .fas {
 
 .products {
   padding: 8px;
-  border: 1px solid var(--roof-terracotta);
   grid-column: 1 / 10;
   grid-row: 6 / 13;
 }
