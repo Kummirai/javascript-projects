@@ -615,11 +615,17 @@ footer .mail .fas {
 }
 
 .categories-heading {
-  border: 1px solid var(--casablanca);
   grid-column: 1 / 4;
   grid-row: 1 / 2;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding: 0 0 0 8px;
+}
+
+.categories-heading h2 {
+  font-size: 1.1rem;
+  color: var(--cocoa-brown);
+  font-weight: 700;
 }
 
 .categories {
@@ -654,12 +660,19 @@ footer .mail .fas {
 }
 
 .products-heading {
-  border: 1px solid var(--christi);
   grid-column: 1 / 4;
   grid-row: 5 / 6;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding: 0 0 0 8px;
+}
+
+.products-heading h2 {
+  font-size: 1.1rem;
+  color: var(--cocoa-brown);
+  font-weight: 700;
+  margin-right: 20px;
 }
 
 .products {

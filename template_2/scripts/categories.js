@@ -11,7 +11,7 @@ const categories = [
   },
   {
     img: "images/product2.png",
-    title: "",
+    title: "Chicken",
   },
   {
     img: "images/product2.png",
