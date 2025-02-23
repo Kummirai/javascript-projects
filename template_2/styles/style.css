@@ -105,7 +105,7 @@ nav a:hover {
 }
 
 main {
-  height: 80vh;
+  height: 85vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -642,7 +642,7 @@ footer .mail .fas {
   align-items: center;
   background-color: var(--casablanca);
   padding: 10px 18px;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .menu-container .search .user p {
@@ -813,7 +813,60 @@ footer .mail .fas {
 }
 
 .invoice {
-  border: 1px solid var(--christi);
   grid-column: 10 / 13;
   grid-row: 2 / 13;
+}
+
+.invoice {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  margin: 0 12px 0 0;
+}
+
+.invoice .invoice-content {
+  grid-row: 2 /7;
+}
+
+.invoice .invoice-content article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--sisal);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.invoice .invoice-content article .product {
+  display: flex;
+  align-items: center;
+}
+
+.invoice .invoice-content article h2 {
+  font-size: 0.9rem;
+}
+
+.invoice .invoice-content article h3 {
+  font-size: 0.75rem;
+  color: var(--roof-terracotta);
+}
+
+.invoice img {
+  width: 60px;
+  margin-right: 4px;
+}
+
+.invoice .invoice-content article .quantity {
+  display: flex;
+  align-items: center;
+}
+
+.invoice .invoice-content article .quantity p {
+  margin: 0 10px;
+}
+
+.invoice .invoice-content article .quantity i{
+  padding: 4px;
+  background-color: var(--casablanca);
+  border-radius: 4px;
 }
