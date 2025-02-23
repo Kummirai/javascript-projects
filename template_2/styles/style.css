@@ -688,6 +688,11 @@ footer .mail .fas {
   background-color: var(--sisal);
   padding: 15px;
   border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.categories article:hover {
+  border: 1px solid var(--casablanca);
 }
 
 .categories img {
@@ -741,6 +746,11 @@ footer .mail .fas {
   background-color: var(--sisal);
   padding: 10px;
   border-radius: 12px;
+  border: 1px solid transparent;
+}
+
+.products article:hover {
+  border: 1px solid var(--casablanca);
 }
 
 .products article h2 {
@@ -849,7 +859,7 @@ footer .mail .fas {
 }
 
 .invoice .invoice-content article h2 {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .invoice .invoice-content article h3 {
@@ -877,7 +887,7 @@ footer .mail .fas {
   border-radius: 4px;
 }
 
-.invoice .place-order{
+.invoice .place-order {
   grid-row: 12 / 13;
   background-color: var(--roof-terracotta);
   color: var(--sisal);
@@ -887,10 +897,8 @@ footer .mail .fas {
   font-weight: 600;
 }
 
-.invoice .place-order:hover{
+.invoice .place-order:hover {
   background-color: var(--casablanca);
   color: var(--cocoa-brown);
   cursor: pointer;
 }
-
-
