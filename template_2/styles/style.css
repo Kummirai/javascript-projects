@@ -683,6 +683,14 @@ footer .mail .fas {
   padding: 8px;
   grid-column: 1 / 10;
   grid-row: 6 / 13;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  overflow-y: auto;
+  justify-content: space-between;
+  overflow: auto; /* Ensures scrolling is still possible */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
 .products article {
@@ -696,7 +704,7 @@ footer .mail .fas {
 }
 
 .products article h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--cocoa-brown);
   font-weight: 700;
   margin-right: 20px;
@@ -705,7 +713,7 @@ footer .mail .fas {
 }
 
 .products article h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--roof-terracotta);
   font-weight: 700;
   margin-right: 20px;
@@ -720,20 +728,33 @@ footer .mail .fas {
 }
 
 .products .buttons .btn {
-  padding: 8px 16px;
+  padding: 6px 12px;
   border: 1px solid transparent;
   margin: 2px;
   border-radius: 4px;
   font-weight: 600;
+  font-size: 0.75rem;
 }
 
 .products .buttons .wishlist {
   color: var(--cocoa-brown);
 }
 
+.products .buttons .wishlist:hover {
+  color: var(--cocoa-brown);
+  cursor: pointer;
+  background-color: var(--casablanca);
+}
+
 .products .buttons .order-now {
   color: var(--sisal);
   background-color: var(--roof-terracotta);
+}
+
+.products .buttons .order-now:hover {
+  color: var(--sisal);
+  background-color: #a8140f;
+  cursor: pointer;
 }
 
 .products .img {
