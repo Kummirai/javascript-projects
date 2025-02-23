@@ -851,6 +851,7 @@ footer .mail .fas {
 
 .invoice .invoice-content {
   grid-row: 2 /7;
+  overflow-y: auto;
 }
 
 .invoice .invoice-content article {
