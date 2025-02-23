@@ -545,6 +545,14 @@ footer .mail .fas {
 }
 
 /*menu page styles*/
+.cassablanca {
+  background-color: var(--casablanca);
+  padding: 2rem;
+}
+
+.cassablanca .logo i {
+  color: var(--cocoa-brown);
+}
 
 .menu-page {
   height: 100vh;
