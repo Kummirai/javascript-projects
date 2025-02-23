@@ -3,7 +3,7 @@ const products = document.querySelector(".products");
 
 const categories = [
   {
-    img: "images/product2.png",
+    img: "images/product1.png",
     title: "Chicken",
   },
   {
@@ -11,23 +11,23 @@ const categories = [
     title: "Burger",
   },
   {
-    img: "images/product2.png",
+    img: "images/product3.png",
     title: "Chicken",
   },
   {
-    img: "images/product2.png",
+    img: "images/product4.png",
     title: "Pizza",
   },
   {
-    img: "images/product2.png",
+    img: "images/product5.png",
     title: "Fries",
   },
   {
-    img: "images/product2.png",
+    img: "images/product6.png",
     title: "Burger Meal",
   },
   {
-    img: "images/product2.png",
+    img: "images/hamburger.png",
     title: "Chesse Burger",
   },
   {
@@ -64,7 +64,7 @@ const burgers = [
   {
     id: 2,
     title: "D-Tripple Burger",
-    image: "images/product3.png",
+    image: "images/product1.png",
     desc: "Twice the beef, twice the cheese, and double the flavor! Our handcrafted double cheeseburger is stacked with premium Angus beef, melted cheddar, and crisp lettuce for a mouthwatering experience",
     price: "$4.99",
   },
@@ -92,7 +92,7 @@ const burgers = [
   {
     id: 6,
     title: "Ultimate Veggie Burger",
-    image: "images/product2.png",
+    image: "images/product3.png",
     desc: "Plant-based perfection! Our Ultimate Veggie Burger is crafted with a hearty black bean patty, crisp greens, fresh avocado, and zesty vegan aioli for a guilt-free yet deliciously satisfying bite.",
     price: "$4.50",
   },
