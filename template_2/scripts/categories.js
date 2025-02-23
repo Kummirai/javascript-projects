@@ -77,7 +77,7 @@ const burgers = [
   },
   {
     id: 4,
-    title: "BBQ Bourbon Bliss Burger",
+    title: "BBQ Bliss Burger",
     image: "images/product2.png",
     desc: "Smoky and savory—this BBQ Bourbon Bliss Burger is a flavor explosion! Hickory-smoked bacon, tangy bourbon BBQ sauce, crispy onion straws, and melted cheddar bring backyard BBQ vibes to every bite.",
     price: "$6.50",
