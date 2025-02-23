@@ -37,7 +37,7 @@ header {
 }
 
 .logo .fa-hamburger {
-  color: var(--cocoa-brown);
+  color: var(--casablanca);
   font-size: 2.3rem;
 }
 
@@ -603,9 +603,50 @@ footer .mail .fas {
 }
 
 .menu-container .search {
-  border: 1px solid var(--cocoa-brown);
   grid-column: 3 / 13;
   grid-row: 1 / 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.menu-container .search input[type="text"] {
+  padding: 11px;
+  width: 300px;
+  border: 1px solid var(--bombay);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--bombay);
+  font-weight: 300;
+}
+
+.menu-container .search button {
+  padding: 10px 24px;
+  background-color: var(--casablanca);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.menu-container .search button:hover {
+  border: 2px solid var(--cocoa-brown);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-container .search .user {
+  display: flex;
+  align-items: center;
+  background-color: var(--casablanca);
+  padding: 10px 18px;
+  border-radius: 12px;
+}
+
+.menu-container .search .user p {
+  padding-left: 16px;
 }
 
 .menu-container .menu-main-page {
