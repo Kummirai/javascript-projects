@@ -814,14 +814,21 @@ footer .mail .fas {
 
 .invoice {
   grid-column: 10 / 13;
-  grid-row: 2 / 13;
-}
-
-.invoice {
+  grid-row: 1 / 13;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(12, 1fr);
-  margin: 0 12px 0 0;
+  margin: 10px;
+  background-color: var(--sisal);
+  justify-content: center;
+}
+
+.invoice .invoice-heading {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 10px;
+  font-size: 1.2rem;
+  color: var(--cocoa-brown);
 }
 
 .invoice .invoice-content {
@@ -832,9 +839,8 @@ footer .mail .fas {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--sisal);
-  padding: 5px;
-  border-radius: 8px;
+  border-bottom: 2px solid var(--mountain-mist);
+  width: 90%;
 }
 
 .invoice .invoice-content article .product {
@@ -865,8 +871,26 @@ footer .mail .fas {
   margin: 0 10px;
 }
 
-.invoice .invoice-content article .quantity i{
+.invoice .invoice-content article .quantity i {
   padding: 4px;
   background-color: var(--casablanca);
   border-radius: 4px;
 }
+
+.invoice .place-order{
+  grid-row: 12 / 13;
+  background-color: var(--roof-terracotta);
+  color: var(--sisal);
+  font-size: 1rem;
+  border: none;
+  margin: 8px;
+  font-weight: 600;
+}
+
+.invoice .place-order:hover{
+  background-color: var(--casablanca);
+  color: var(--cocoa-brown);
+  cursor: pointer;
+}
+
+
