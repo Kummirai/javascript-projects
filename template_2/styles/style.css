@@ -29,6 +29,10 @@ body {
   flex-direction: column;
 }
 
+.fa-bars {
+  display: none;
+}
+
 header {
   grid-column: 1 / 13;
   display: flex;
@@ -999,7 +1003,29 @@ footer .mail .fas {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 2rem 0 2rem;
+    padding: 0.8rem;
+  }
+  .nav-delivery {
+    width: 60%;
+  }
+
+  .nav-delivery nav {
+    display: none;
+  }
+
+  .logo h1 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0 0 0 0.5rem;
+  }
+
+  .logo .fa-hamburger {
+    font-size: 2rem;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 1.4rem;
   }
 
   .burgers-container {
