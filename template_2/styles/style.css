@@ -28,6 +28,7 @@ body {
 .outer-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .fa-bars {
@@ -1105,6 +1106,7 @@ footer .mail .fas {
     gap: 1rem;
     margin-top: 2.5rem;
     padding: 0.5rem;
+    width: 100%;
   }
   .burger-main {
     grid-column: 1 / -1;
