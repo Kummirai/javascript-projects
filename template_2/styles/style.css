@@ -911,3 +911,55 @@ footer .mail .fas {
   color: var(--cocoa-brown);
   cursor: pointer;
 }
+
+.payment {
+  border: 1px dashed var(--bombay);
+  grid-row: 7 / 12;
+  margin: 0 0.5rem;
+}
+
+.payment h2 {
+  font-size: 1rem;
+  color: var(--cocoa-brown);
+}
+
+.totals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.totals h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--bombay);
+  margin: 0.5rem 0;
+}
+
+.payment-method {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+}
+
+.g-pay {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.visa {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.mastercard {
+  grid-column: 1 / 2;
+  grid-row: 2/ 3;
+}
+
+.g-pay {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
