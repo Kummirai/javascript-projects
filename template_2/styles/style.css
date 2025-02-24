@@ -839,6 +839,7 @@ footer .mail .fas {
   margin: 10px;
   background-color: var(--sisal);
   justify-content: center;
+  gap: 10px;
 }
 
 .invoice .invoice-heading {
