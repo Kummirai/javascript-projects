@@ -1037,4 +1037,13 @@ footer .mail .fas {
     padding: 0;
     margin: 0 0 2rem 0;
   }
+
+  footer {
+    color: #fff;
+    height: 60vh;
+    display: grid;
+    background-image: url("../images/burger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
