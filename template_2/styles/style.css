@@ -1010,7 +1010,6 @@ footer .mail .fas {
     gap: 1rem;
     margin-top: 2.5rem;
     padding: 0.5rem;
-    color: var(--coconut-cream);
   }
   .burger-main {
     grid-column: 1 / -1;
@@ -1028,5 +1027,14 @@ footer .mail .fas {
   .right-bottom {
     grid-column: 1 / -1;
     grid-row: 4/ 6;
+  }
+
+  .upcoming {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    margin: 0 0 2rem 0;
   }
 }
