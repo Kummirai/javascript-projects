@@ -1055,11 +1055,12 @@ footer .mail .fas {
     background-color: var(--roof-terracotta);
     color: var(--sisal);
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0.2rem 0.5rem;
     top: 20px;
     right: 50px;
   }
+
   main .main-image {
     grid-column: 1 / 13;
     grid-row: 1 / 8;
@@ -1069,6 +1070,17 @@ footer .mail .fas {
     grid-column: 1 / 13;
     grid-row: 11 / 13;
     display: flex;
+  }
+
+  .opacity {
+    border: 1px solid var(--cocoa-brown);
+    border-radius: 8px;
+    box-shadow: 0 0 4px var(--cocoa-brown);
+  }
+
+  main .small-burgers img {
+    width: 60px;
+    padding: 0;
   }
 
   main .arrows {
@@ -1120,7 +1132,8 @@ footer .mail .fas {
     color: #fff;
     height: 60vh;
     display: grid;
-    background-image: url("../images/burger.jpg");
+    background-image: none;
+    background-color: var(--cocoa-brown);
     background-repeat: no-repeat;
     background-size: cover;
   }
