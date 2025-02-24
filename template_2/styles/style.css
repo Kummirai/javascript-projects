@@ -991,6 +991,9 @@ footer .mail .fas {
 }
 
 @media (max-width: 600px) {
+  .orange {
+    width: 50%;
+  }
   .container {
     position: relative;
     height: 100vh;
@@ -1026,6 +1029,55 @@ footer .mail .fas {
   .fa-bars {
     display: block;
     font-size: 1.4rem;
+  }
+  main {
+    grid-column: 1 / -1;
+    height: 90vh;
+    padding: 0 1rem 1rem 1rem;
+    position: relative;
+  }
+
+  main .main-heading {
+    grid-column: 1 / 13;
+    grid-row: 6 / 11;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  main .main-heading h1 {
+    font-size: 2rem;
+    line-clamp: 2;
+  }
+
+  main .call-to-action h2 {
+    background-color: var(--roof-terracotta);
+    color: var(--sisal);
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.5rem;
+    top: 20px;
+    right: 50px;
+  }
+  main .main-image {
+    grid-column: 1 / 13;
+    grid-row: 1 / 8;
+  }
+
+  main .small-burgers {
+    grid-column: 1 / 13;
+    grid-row: 11 / 13;
+    display: flex;
+  }
+
+  main .arrows {
+    grid-column: 4 /10;
+    grid-row: 13;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
   }
 
   .burgers-container {
