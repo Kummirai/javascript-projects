@@ -1040,7 +1040,7 @@ footer .mail .fas {
 
   main .main-heading {
     grid-column: 1 / 13;
-    grid-row: 6 / 11;
+    grid-row: 7 / 11;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
