@@ -1339,7 +1339,7 @@ footer .mail .fas {
     font-size: 1.8rem;
     font-family: "Bevan", serif;
     font-weight: 500;
-}
+  }
   .reservation {
     width: 100%;
     height: 120vh;
@@ -1349,7 +1349,7 @@ footer .mail .fas {
     place-items: center;
   }
 
-  .reservation form{
+  .reservation form {
     grid-column: 1 / 13;
     height: 100%;
     width: 100%;
@@ -1366,15 +1366,16 @@ footer .mail .fas {
     align-items: center;
     justify-content: space-evenly;
     margin: 1rem;
-}
+  }
 
   footer {
-    color: #fff;
-    height: 60vh;
-    display: grid;
+    margin: 0;
+    padding: 10px;
     background-image: none;
     background-color: var(--cocoa-brown2);
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 }
