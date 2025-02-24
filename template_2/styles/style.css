@@ -1,5 +1,6 @@
 :root {
   --cocoa-brown: #492a24;
+  --cocoa-brown2: #1a0e0c;
   --casablanca: #ffc130f6;
   --coconut-cream: #f8eed4;
   --roof-terracotta: #cc211b;
@@ -1057,7 +1058,7 @@ footer .mail .fas {
     position: absolute;
     font-size: 1.2rem;
     padding: 0.2rem 0.5rem;
-    top: 20px;
+    top: 40px;
     right: 50px;
   }
 
@@ -1075,12 +1076,16 @@ footer .mail .fas {
   .opacity {
     border: 1px solid var(--cocoa-brown);
     border-radius: 8px;
-    box-shadow: 0 0 4px var(--cocoa-brown);
+    box-shadow: 0 0 4px var(--cocoa-brown)
   }
 
   main .small-burgers img {
     width: 60px;
     padding: 0;
+  }
+
+  main .mini-burger {
+    display: none;
   }
 
   main .arrows {
@@ -1133,7 +1138,7 @@ footer .mail .fas {
     height: 60vh;
     display: grid;
     background-image: none;
-    background-color: var(--cocoa-brown);
+    background-color: var(--cocoa-brown2);
     background-repeat: no-repeat;
     background-size: cover;
   }
