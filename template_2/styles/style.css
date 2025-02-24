@@ -1164,3 +1164,217 @@ footer .mail .fas {
     background-size: cover;
   }
 }
+
+@media (max-width: 480px) {
+  .orange {
+    width: 50%;
+    height: 105vh;
+  }
+  .container {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+  }
+  header {
+    grid-column: 1 / 13;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+  }
+  .nav-delivery {
+    width: 80%;
+  }
+
+  .nav-delivery nav {
+    display: none;
+  }
+
+  .logo h1 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0 0 0 0.5rem;
+  }
+
+  .logo .fa-hamburger {
+    font-size: 2rem;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 1.4rem;
+  }
+  main {
+    grid-column: 1 / -1;
+    height: 100%;
+    padding: 0 1rem 1rem 1rem;
+    position: relative;
+  }
+
+  main .main-heading {
+    grid-column: 1 / 13;
+    grid-row: 6 / 11;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #main-product-desc {
+    font-weight: 100;
+  }
+  main .main-heading h1 {
+    font-size: 1.5rem;
+    line-clamp: 2;
+  }
+
+  main .call-to-action h2 {
+    background-color: var(--roof-terracotta);
+    color: var(--sisal);
+    position: absolute;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    top: 20px;
+    right: 50px;
+  }
+
+  main .main-image {
+    grid-column: 1 / 13;
+    grid-row: 1 / 7;
+  }
+
+  main .main-image div {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .main-image img {
+    width: 100%;
+  }
+
+  main .small-burgers {
+    display: none;
+    grid-column: 1 / 13;
+    grid-row: 11 / 13;
+    /* display: flex; */
+  }
+
+  .opacity {
+    border: 1px solid var(--cocoa-brown);
+    border-radius: 8px;
+    box-shadow: 0 0 4px var(--cocoa-brown);
+  }
+
+  main .small-burgers img {
+    width: 56px;
+    padding: 0;
+  }
+
+  main .mini-burger {
+    display: none;
+  }
+
+  main .arrows {
+    grid-column: 1 /13;
+    grid-row: 4;
+    padding: 0;
+  }
+
+  main .arrows .fas {
+    color: var(--sisal);
+    background-color: var(--cocoa-brown);
+    opacity: 0.1;
+  }
+
+  main .arrows .fas:hover {
+    color: var(--cocoa-brown);
+    background-color: transparent;
+    border: 1px solid var(--cocoa-brown);
+    opacity: 1;
+  }
+  .choose-enjoy article h3 {
+    font-size: 1.8rem;
+  }
+  .burgers-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .burger-main {
+    grid-column: 1 / -1;
+    grid-row: 1/ 3;
+    background-image: url("../images/grilled-beef.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .right-top {
+    grid-column: 1 / -1;
+    grid-row: 3/ 4;
+  }
+
+  .right-bottom {
+    grid-column: 1 / -1;
+    grid-row: 4/ 6;
+  }
+
+  .upcoming {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
+  .upcoming h3 {
+    font-size: 1.8rem;
+    font-family: "Bevan", serif;
+    font-weight: 500;
+}
+  .reservation {
+    width: 100%;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+  }
+
+  .reservation form{
+    grid-column: 1 / 13;
+    height: 100%;
+    width: 100%;
+  }
+  .reservation form input {
+    width: 100%;
+    margin: 0.3rem 0;
+    border: 1px solid var(--bombay);
+  }
+  fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+  footer {
+    color: #fff;
+    height: 60vh;
+    display: grid;
+    background-image: none;
+    background-color: var(--cocoa-brown2);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
