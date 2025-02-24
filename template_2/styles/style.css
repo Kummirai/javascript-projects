@@ -1001,4 +1001,32 @@ footer .mail .fas {
     justify-content: space-between;
     padding: 2rem 2rem 0 2rem;
   }
+
+  .burgers-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+    padding: 0.5rem;
+    color: var(--coconut-cream);
+  }
+  .burger-main {
+    grid-column: 1 / -1;
+    grid-row: 1/ 3;
+    background-image: url("../images/grilled-beef.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .right-top {
+    grid-column: 1 / -1;
+    grid-row: 3/ 4;
+  }
+
+  .right-bottom {
+    grid-column: 1 / -1;
+    grid-row: 4/ 6;
+  }
 }
