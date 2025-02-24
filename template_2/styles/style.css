@@ -24,6 +24,11 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.outer-container {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   grid-column: 1 / 13;
   display: flex;
@@ -52,6 +57,7 @@ header {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  width: 42%;
 }
 
 .delivery {
@@ -64,7 +70,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 520px;
+  width: 100%;
 }
 .delivery .fa-truck {
   padding-right: 1rem;
@@ -181,16 +187,20 @@ main .main-heading h1 {
 }
 
 main .main-image {
-  grid-column: 5 / 10;
-  grid-row: 1 / 10;
+  grid-column: 4 / 12;
+  grid-row: 1 / 12;
+}
+
+main .main-image div {
+  max-width: 600px;
 }
 
 main .main-image img {
-  width: 600px;
+  width: 100%;
 }
 
 main .mini-burger {
-  grid-column: 12 / 13;
+  grid-column: 10 / 12;
   grid-row: 4 / 8;
 }
 
@@ -297,7 +307,6 @@ main .arrows .fas:hover {
 /*order now section styles */
 
 .choose-enjoy {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -336,16 +345,18 @@ main .arrows .fas:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .order-now article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 400px;
 }
 
 .order-now img {
-  width: 400px;
+  width: 100%;
 }
 
 .order-now p {
@@ -965,4 +976,21 @@ footer .mail .fas {
 .g-pay {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+}
+
+@media (max-width: 600px) {
+  .container {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+  }
+  header {
+    grid-column: 1 / 13;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem 0 2rem;
+  }
 }
