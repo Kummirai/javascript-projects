@@ -57,7 +57,7 @@ header {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  width: 42%;
+  width: 38%;
 }
 
 .delivery {
@@ -107,7 +107,7 @@ nav a:hover {
   top: 0;
   right: 0;
   height: 100%;
-  width: 46.5%;
+  width: 42%;
   z-index: -1;
 }
 
@@ -235,12 +235,12 @@ main .small-burgers img {
 }
 
 main .arrows {
-  grid-column: 8 / 10;
+  grid-column: 7 / 9;
   grid-row: 12 / 13;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  opacity: 1;
+  padding: 0 1.5rem 0 0;
 }
 
 main .arrows .fas {
