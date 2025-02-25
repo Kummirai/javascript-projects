@@ -6,11 +6,17 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.zeyada-regular {
+  font-family: "Zeyada", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
-  --fuscous-gray: #54534c;
+  --fuscous-gray: #3f3e37;
   --gray: #929292;
   --outrageous-orange: #fe5437;
-  --desert-storm: #f5f5f3;
+  --desert-storm: #f5f5f4;
   --husk: #bbaa50;
   --concrete: #f3f3f3;
   --gray-nickel: #c0c0bf;
@@ -27,6 +33,9 @@
 
 .home-container {
   background-color: var(--desert-storm);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .root {
@@ -41,27 +50,55 @@
 }
 
 header {
+  grid-column: 2 / 12;
+  grid-row: 1 / 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0rem 1rem 2rem;
+  padding: 1rem 0 0 0;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo i {
+  font-size: 32px;
+  color: var(--lima);
+}
+
+header .logo h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gray);
+}
+
+header .user {
+  display: flex;
+  align-items: center;
+  color: var(--cod-gray)
+}
+
+header .user i {
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 nav {
-  width: 40%;
+  grid-column: 4/ 10;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
 }
 
 nav a {
   text-decoration: none;
-  font-size: 0.95rem;
-  color: var(--black);
-  border-radius: 15px;
-  padding: 0.3rem 1rem;
-  background: var(--white-f8);
+  font-size: 0.8rem;
+  color: var(--cod-gray);
+  padding: 0.3rem 1.4rem;
+  font-weight: 600;
 }
 
 .nav-link.active {
@@ -69,6 +106,8 @@ nav a {
 }
 
 main {
+  grid-column: 2 / 12;
+  grid-row: 2 / 13;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -86,7 +125,7 @@ main {
 }
 
 main .heading {
-  grid-column: 2 / 8;
+  grid-column: 1 / 7;
   grid-row: 2 / 7;
   display: flex;
   flex-direction: column;
@@ -96,13 +135,15 @@ main .heading {
 
 main .heading h1 {
   font-size: 3.2rem;
-  color: var(--cod-gray);
+  color: var(--fuscous-gray);
   width: 70%;
+  font-weight: 700;
 }
 
 main .heading h2 {
   color: var(--lima);
-  font-family: cursive;
+  font-family: "Zeyada", serif;
+  font-size: 2.4rem;
 }
 
 main .heading p {
@@ -113,7 +154,7 @@ main .heading p {
   margin: 1.5rem 0;
 }
 
-main .heading button {
+main .heading a {
   background-color: var(--outrageous-orange);
   color: var(--concrete);
   border: none;
@@ -121,14 +162,15 @@ main .heading button {
   font-weight: 500;
   border-radius: 5px;
   padding: 0.5rem 1rem;
+  text-decoration: none;
 }
 main .popular-recipes-heading {
-  grid-column: 2 / 5;
+  grid-column: 1 / 4;
   grid-row: 8 / 9;
 }
 main .popular-recipes {
   grid-row: 9 / 13;
-  grid-column: 2 / 12;
+  grid-column: 1 / 13;
   display: flex;
   justify-content: space-between;
 }
@@ -146,7 +188,7 @@ main .popular-recipes article {
 
 main .popular-recipes-heading {
   font-size: 1rem;
-  color: var(--cod-gray);
+  color: var(--fuscous-gray);
   font-weight: 300;
 }
 
