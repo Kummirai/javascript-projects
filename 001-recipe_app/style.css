@@ -43,7 +43,7 @@
   width: fit-content;
   height: 80vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-template-rows: auto;
   grid-gap: 1rem;
   padding: 0 1rem;
