@@ -16,7 +16,7 @@
   --fuscous-gray: #3f3e37;
   --gray: #929292;
   --outrageous-orange: #fe5437;
-  --desert-storm: #f5f5f4;
+  --desert-storm: #fffff5;
   --husk: #bbaa50;
   --concrete: #f3f3f3;
   --gray-nickel: #c0c0bf;
@@ -184,6 +184,7 @@ main .popular-recipes article {
   padding: 0.8rem;
   border-radius: 12px;
   height: 100px;
+  box-shadow: 0 0 10px var(--concrete);
 }
 
 main .popular-recipes-heading {
