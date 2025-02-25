@@ -10,7 +10,7 @@
   --fuscous-gray: #54534c;
   --gray: #929292;
   --outrageous-orange: #fe5437;
-  --desert-storm: #f3f3f2;
+  --desert-storm: #f5f5f3;
   --husk: #bbaa50;
   --concrete: #f3f3f3;
   --gray-nickel: #c0c0bf;
@@ -22,7 +22,11 @@
 .main-container {
   width: 100vw;
   position: relative;
-  background: var(--concrete);
+  background-color: var(--concrete);
+}
+
+.home-container {
+  background-color: var(--desert-storm);
 }
 
 .root {
@@ -125,7 +129,54 @@ main .popular-recipes-heading {
 main .popular-recipes {
   grid-row: 9 / 13;
   grid-column: 2 / 12;
+  display: flex;
+  justify-content: space-between;
 }
+
+main .popular-recipes article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: fit-content;
+  padding: 0.8rem;
+  border-radius: 12px;
+  height: 100px;
+}
+
+main .popular-recipes-heading {
+  font-size: 1rem;
+  color: var(--cod-gray);
+  font-weight: 300;
+}
+
+main .popular-recipes .menu-image {
+  width: 100px;
+}
+
+main .popular-recipes .menu-image img {
+  width: 100%;
+  padding-left: 10px;
+  align-self: flex-start;
+}
+
+main .popular-recipes h2 {
+  font-size: 0.95rem;
+  color: var(--fuscous-gray);
+  margin-bottom: 0.2rem;
+}
+
+main .popular-recipes p {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+main .popular-recipes .menu-type {
+  color: var(--outrageous-orange);
+  font-weight: 500;
+  font-weight: 0.9rem;
+}
+
 main .main-image {
   grid-column: 8 / 12;
   grid-row: 2 / 8;
@@ -167,18 +218,18 @@ main .main-image img {
   color: var(--green);
 }
 
-.homepage-images {
+/* .homepage-images {
   margin: 2.4rem 0 0 0;
   grid-column: 1 / -1;
   grid-row: 4 / 5;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
+} */
 
-.image {
+/* .image {
   box-shadow: 0px 0px 10px rgba(45, 45, 45, 1);
-}
+} */
 
 .get-started {
   grid-row-start: 7;
