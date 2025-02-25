@@ -107,14 +107,12 @@ nav a {
 }
 
 main {
-  main {
-    grid-column: 2 / 12;
-    grid-row: 2 / 13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    width: 100%;
-  }
+  grid-column: 2 / 12;
+  grid-row: 2 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  width: 100%;
 }
 
 .site-details {
@@ -172,12 +170,10 @@ main .popular-recipes-heading {
 }
 
 main .popular-recipes {
-  main .popular-recipes {
-    grid-row: 11 / 12;
-    grid-column: 1 / 13;
-    display: flex;
-    justify-content: space-between;
-  }
+  grid-row: 11 / 12;
+  grid-column: 1 / 13;
+  display: flex;
+  justify-content: space-between;
 }
 
 main .popular-recipes article {
