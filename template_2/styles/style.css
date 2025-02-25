@@ -276,6 +276,7 @@ main .arrows .fas:hover {
   margin-top: 2.5rem;
   padding: 2rem;
   color: var(--coconut-cream);
+  width: 100%;
 }
 
 .burgers-container article {
