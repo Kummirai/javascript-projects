@@ -1,81 +1,61 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="author" content="Milton Kumikrai" />
+    <title>yoRecipes</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>yoRecipes</title>
-</head>
-
-<body>
-  <div class="home-container">
-    <header>
-      <div class="heading">
-        <h1>yo<span>Recipes</span></h1>
-      </div>
-      <nav>
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="recipes.html">Recipes</a>
-        <a class="nav-link" href="index.html">About Us</a>
-        <i class="fas fa-user"></i>
-      </nav>
-      <div class="account">
-        <p class="user">Username</p>
-        <p class="savedRecipes">Saved Recipes</p>
-        <p class="islogged">Log In</p>
-      </div>
-    </header>
-    <main>
-      <section class="images">
-        <img src="./images/image0.png" alt="./images/mainImage.png">
-      </section>
-      <section class="site-details">
-        <div class="main-heading">
-          <h1>Your meals, <span>Your Recipes</span></h1>
+  <body>
+    <div class="home-container">
+      <header>
+        <div class="logo">
+          <i class="fas fa-pizza-slice"></i>
+          <h2>yoRecipes</h2>
         </div>
-        <div class="description">
-          <p>Your meals, your recipes is here to help you cook delicious meals
-            with less stress and more joy. We offer recipes and cooking advice
-            for home cooks, by home cooks.</p>
+        <nav>
+          <a href="#">Home</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+        </nav>
+      </header>
+      <main>
+        <div class="main-image">
+          <img
+            src="images/a9fa4804e0b9c389edab2803f9137084 (Custom).png"
+            alt="main-image"
+          />
         </div>
-        <div class="stats">
-          <div class="time">
-            <p class="numbers">200 +</p>
-            <p class="stats-dsc">Recipes</p>
-          </div>
-          <p class="stats-sep">|</p>
-          <div class="nutrition">
-            <p class="numbers">100 +</p>
-            <p class="stats-dsc">Main meals</p>
-          </div>
-          <p class="stats-sep">|</p>
-          <div class="ingred">
-            <p class="numbers">100 +</p>
-            <p class="stats-dsc">Dessert meals</p>
-          </div>
+        <div class="heading">
+          <h2>Briko Salad</h2>
+          <h1>Wait a minute for delicious.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque in
+            velit sit ratione, iste quos incidunt atque expedita.
+          </p>
+          <button>Discover Menu</button>
         </div>
-        <!--<div class="homepage-images">
-          <div class="image">
-            <img src="./images/cooking.jpg" alt="./images/image1.png">
-          </div>
-          <div class="image">
-            <img src="./images/main.jpg" alt="./images/image1.png">
-          </div>
-          <div class="image">
-            <img src="./images/dessert.jpg" alt="./images/image1.png">
-          </div>
-        </div>-->
-      </section>
-      <div class="get-started">
-        <button><a href="recipes.html">Get Started</a></button>
-      </div>
-    </main>
-  </div>
-  <script src="main.js" type="module"></script>
-</body>
-
+        <article class="popular-recipes-heading">
+          <h2>Polpular Recipes</h2>
+        </article>
+        <section class="popular-recipes">
+          <article>
+            <div class="menu-details">
+              <h2>Pizza</h2>
+              <p>Lorem, ipsum dolor.</p>
+              <p class="menu-type">Snack</p>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

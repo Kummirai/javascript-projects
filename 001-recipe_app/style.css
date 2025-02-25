@@ -2,24 +2,27 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-:root{
-  --green: darkorange;
-  --light-green: #cce9d5;
-  --white: #fff;
-  --grey: #9B9B9B;
-  --green-grey: #A4B5A7;
-  --white-f8: #f9f8f8;
-  --white-f5: #f5f5f5;
-  --black: #000;
+:root {
+  --fuscous-gray: #54534c;
+  --gray: #929292;
+  --outrageous-orange: #fe5437;
+  --desert-storm: #f3f3f2;
+  --husk: #bbaa50;
+  --concrete: #f3f3f3;
+  --gray-nickel: #c0c0bf;
+  --cod-gray: #121212;
+  --green-leaf: #52770f;
+  --lima: #74ac1e;
 }
 
 .main-container {
   width: 100vw;
   position: relative;
-  background: var(--white-f8);
+  background: var(--concrete);
 }
 
 .root {
@@ -31,7 +34,6 @@
   grid-gap: 1rem;
   padding: 0 1rem;
   overflow-y: auto;
-  
 }
 
 header {
@@ -55,7 +57,6 @@ nav a {
   color: var(--black);
   border-radius: 15px;
   padding: 0.3rem 1rem;
-  font-family: "New times romans";
   background: var(--white-f8);
 }
 
@@ -63,29 +64,12 @@ nav a {
   border-bottom: 1px solid var(--green);
 }
 
-.home-container img {
-  width: 500px;
-}
-
 main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   height: 100vh;
-  /*background: url('./images/jimmy-dean-IanqI4W4fco-unsplash.jpg');
-  background-size: cover;
-  background-position: center;*/
-}
-
-main .images {
-  grid-column: 1 / 2;
-  grid-row: 1 / 6;
-  padding: 0 0 0 0;
-
-}
-
-main .images img {
-  width: 105%;
+  width: 100%;
 }
 
 .site-details {
@@ -95,28 +79,60 @@ main .images img {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 1fr);
   padding: 3rem 1rem 1rem 1rem;
-  /*backdrop-filter: blur(3px) saturate(180%);
-  -webkit-backdrop-filter: blur(3px) saturate(180%);
-  background-color: rgba(83, 83, 83, 0.3);
-  padding: 30px;
-  max-width: 500px;
-  height: 440px;
-  border-radius: 10px;
-  z-index: 1;*/
 }
 
-.main-heading {
-  grid-column: 1 / -1;
+main .heading {
+  grid-column: 2 / 8;
+  grid-row: 2 / 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.main-heading h1 {
-  font-size: 3rem;
-  color: var(--black);
+main .heading h1 {
+  font-size: 3.2rem;
+  color: var(--cod-gray);
+  width: 70%;
 }
 
-.main-heading h1>span {
-  color: var(--green);
-  font-weight: 100;
+main .heading h2 {
+  color: var(--lima);
+  font-family: cursive;
+}
+
+main .heading p {
+  width: 70%;
+  color: var(--gray);
+  font-size: 0.95rem;
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+
+main .heading button {
+  background-color: var(--outrageous-orange);
+  color: var(--concrete);
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+main .popular-recipes-heading {
+  grid-column: 2 / 5;
+  grid-row: 8 / 9;
+}
+main .popular-recipes {
+  grid-row: 9 / 13;
+  grid-column: 2 / 12;
+}
+main .main-image {
+  grid-column: 8 / 12;
+  grid-row: 2 / 8;
+}
+
+main .main-image img {
+  width: 100%;
 }
 
 .description {
@@ -138,7 +154,6 @@ main .images img {
   color: var(--black);
   font-size: 1.3rem;
   font-family: "New times romans";
-  ;
 }
 
 .stats-sep {
@@ -190,7 +205,7 @@ main .images img {
 }
 
 .card-container {
-  box-shadow: 0 0 10px #FFFCF6;
+  box-shadow: 0 0 10px #fffcf6;
   width: 240px;
   height: fit-content;
   background: var(--white);
@@ -218,7 +233,7 @@ body {
   font-size: 15pt;
   /*background-color: rgba(255, 247, 225, 0.3);*/
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .details {
@@ -230,7 +245,7 @@ body {
   padding: 0.5rem;
 }
 
-.details h2{
+.details h2 {
   color: var(--black);
   align-self: flex-start;
   font-size: 0.85rem;
@@ -262,20 +277,7 @@ button {
   border-radius: 3px;
   font-size: 0.75rem;
   margin: 0.3rem 0 0.1rem 0;
-  box-shadow: 0 0 10px #F0ECEC;
-}
-
-h1 {
-  font-size: 1.4rem;
-  font-weight: 100;
-  color: var(--black);
-  font-family: "New times romans";
-}
-
-h1 span {
-  color: var(--green);
-  font-weight: 700;
-  font-family: "New times romans";
+  box-shadow: 0 0 10px #f0ecec;
 }
 
 .choose {
@@ -299,7 +301,7 @@ h1 span {
 }
 
 iframe {
-  box-shadow: 0px 0px 5px #2D2D2D;
+  box-shadow: 0px 0px 5px #2d2d2d;
   position: relative;
 }
 
@@ -412,7 +414,7 @@ li {
 }
 
 .image-section {
-  background: url('./images/cook.jpg');
+  background: url("./images/cook.jpg");
   background-size: cover;
   background-position: center left;
   width: 100%;
@@ -478,7 +480,6 @@ li {
   margin: 0 0 1.8rem 0;
   display: flex;
   flex-direction: column;
-
 }
 
 .welcome-back h2 {
