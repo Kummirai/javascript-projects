@@ -26,9 +26,9 @@
 }
 
 .main-container {
-  width: 100vw;
+  width: 100%;
   position: relative;
-  background-color: var(--concrete);
+  background-color: var(--desert-storm);
 }
 
 .home-container {
