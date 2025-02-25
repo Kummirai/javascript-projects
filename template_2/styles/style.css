@@ -1052,6 +1052,7 @@ footer .mail .fas {
   main .main-heading h1 {
     font-size: 2rem;
     line-clamp: 2;
+    width: 70%;
   }
 
   main .call-to-action h2 {
