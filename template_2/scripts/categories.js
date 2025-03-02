@@ -133,7 +133,7 @@ const productSection = () => {
       invoiceContent.innerHTML = "";
       const image = button.getAttribute("data-burger-image");
       const title = button.getAttribute("data-burger-title");
-      const price = button.getAttribute("data-burger-pricewebp
+      const price = button.getAttribute("data-burger-priceweb");
 
       const ordered = {
         name: title,
