@@ -135,7 +135,7 @@ main .main-heading {
   justify-content: space-around;
 }
 
-main .main-heading button {
+main .main-heading a {
   background-color: var(--cocoa-brown);
   color: var(--sisal);
   border: none;
@@ -144,9 +144,10 @@ main .main-heading button {
   border: 3px solid var(--cocoa-brown);
   font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
 }
 
-main .main-heading button:hover {
+main .main-heading a:hover {
   background-color: var(--sisal);
   color: var(--cocoa-brown);
 }
