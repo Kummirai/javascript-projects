@@ -128,6 +128,9 @@ const productSection = () => {
   let orderHtml = "";
 
   const orderButtons = document.querySelectorAll(".order-now");
+  const tax = document.querySelector(".tax");
+  const total = document.querySelector(".total");
+
   orderButtons.forEach((button) => {
     button.addEventListener("click", () => {
       invoiceContent.innerHTML = "";
@@ -143,11 +146,17 @@ const productSection = () => {
 
       customerOrder = [...customerOrder, ordered];
       let subtotal = 0;
+      let mytax = 0;
+      let mytotal = 0;
       customerOrder.map((price) => {
         subtotal = subtotal + Number(price.cost);
+        mytax = 0.06 * subtotal;
+        mytotal = mytax + subtotal;
       });
 
       mySubTotal.innerHTML = `$${(subtotal / 100).toFixed(2)}`;
+      tax.innerHTML = `$${(mytax / 100).toFixed(2)}`;
+      total.innerHTML = `$${(mytotal / 100).toFixed(2)}`;
 
       invoiceContent.innerHTML = "";
       orderHtml = "";
