@@ -28,7 +28,7 @@
 .main-container {
   width: 100%;
   position: relative;
-  background-color: var(--desert-storm);
+  background-color: #fff;
 }
 
 .home-container {
@@ -302,13 +302,11 @@ main .main-image img {
 }
 
 .card-container {
-  box-shadow: 0 0 10px #fffcf6;
-  width: 240px;
   height: fit-content;
-  background: var(--white);
   padding: 0.8rem;
   border-radius: 4px;
-  box-shadow: 0 0 10px var(--white-f8);
+  background-color: var(--desert-storm);
+  box-shadow: 0 0 2px var(--lima);
 }
 
 .img-container {
