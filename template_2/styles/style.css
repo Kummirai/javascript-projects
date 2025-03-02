@@ -9,6 +9,7 @@
   --sisal: #ffffff;
   --sapling: #dccba8;
   --bombay: #b3b4b8;
+  --bombay2: #575757;
   --christi: #20ac04;
 }
 
@@ -949,7 +950,7 @@ footer .mail .fas {
 
 .payment h2 {
   font-size: 1rem;
-  color: var(--bombay);
+  color: var(--christi);
 }
 
 .totals {
@@ -960,10 +961,15 @@ footer .mail .fas {
 }
 
 .totals h3 {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  color: var(--bombay);
+  color: var(--bombay2);
   margin: 0.2rem 0;
+}
+.totals .bold {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--christi);
 }
 
 .payment-method {
