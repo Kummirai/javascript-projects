@@ -941,7 +941,7 @@ footer .mail .fas {
 }
 
 .payment {
-  border: 2px dashed var(--bombay);
+  border: 1px dashed var(--bombay);
   grid-row: 7 / 12;
   margin: 0 0.5rem;
   padding: 10px;
@@ -950,7 +950,11 @@ footer .mail .fas {
 
 .payment h2 {
   font-size: 1rem;
-  color: var(--christi);
+  color: var(--cocoa-brown);
+  background-color: var(--casablanca);
+  padding: 0.2rem 0.6rem;
+  width: fit-content;
+  border-radius: 3px;
 }
 
 .totals {
